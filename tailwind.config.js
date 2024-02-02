@@ -4,12 +4,13 @@ module.exports = {
   theme: {
     colors:{
       transparent:"transparent",
-      primary: "#050816",
-      secondary: "#aaa6c3",
-      tertiary: "#151030",
-      "black-100": "#100d25",
-      "black-200": "#090325",
-      "white-100": "#f3f3f3",
+      "white": "#ffffff",
+      "black": "#000000",
+      "nav-bg": "#F8F8F8",
+      "blue": "#397FFE",
+      "menu-c": "#9CA1AC",
+      "gray": "#F4F6FA",
+      "purple": "#6988B7",
     },
     container: {
       center: true,
@@ -18,7 +19,7 @@ module.exports = {
         sm: '2rem',
         lg: '2rem',
         xl: '5rem',
-        '2xl': '6rem',
+        '2xl': '1rem',
       },
     },
     extend: {},

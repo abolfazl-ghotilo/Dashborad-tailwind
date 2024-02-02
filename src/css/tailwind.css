@@ -1,3 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components{
+    .menu-s{
+        @apply flex items-center justify-start gap-4 text-menu-c duration-300 transition-all pl-3 hover:bg-blue hover:text-white rounded-lg w-40 py-2 cursor-pointer;
+    }
+    .menu-svg-hover{
+        @apply group-hover:fill-white;
+    }
+    .btns{
+        @apply flex items-center justify-center text-xl font-semibold text-white duration-300 transition-all border-2 rounded-lg py-2 px-6 bg-blue hover:text-blue hover:bg-white;
+    }
+    .ROC{
+        @apply text-black/45 font-semibold flex flex-col items-center gap-1 hover:text-blue duration-300 transition-all cursor-pointer;
+    }
+    .underlineROC{
+        @apply h-1 w-9 rounded-full group-hover:bg-blue duration-300 transition-all;
+    }
+    .profiles{
+        @apply flex items-center justify-center gap-3 border border-purple py-2 w-36 rounded-full absolute right-16 bottom-40 bg-transparent;
+    }
+    .firstflag{
+        @apply flex flex-col items-start justify-between py-1 pl-2 w-[275px] h-14 bg-gradient-to-r to-[#94D2FF] from-[#41A9FA] absolute left-[19px] top-6 border-l-[10px] border-[#0063B7];
+    }
+    .secoundflag{
+        @apply flex flex-col items-start justify-between py-1 pl-2 w-[275px] h-14 bg-gradient-to-r to-[#FF9074] from-[#FF6C75] absolute left-[47px] top-[104px] border-l-[10px] border-[#FF4955];
+    }
+    .thirdflag{
+        @apply flex flex-col items-start justify-between py-1 pl-2 w-[275px] h-14 bg-gradient-to-r to-[#FFB215] from-[#FF8C56] absolute left-[19px] top-[187px] border-l-[10px] border-[#D25720];
+    }
+    .info{
+        @apply flex items-center gap-2;
+    }
+}
