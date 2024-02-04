@@ -682,7 +682,7 @@ video {
 
 .profiles {
   position: absolute;
-  right: 4rem;
+  right: 5rem;
   bottom: 10rem;
   display: flex;
   width: 9rem;
@@ -700,11 +700,11 @@ video {
 
 .firstflag {
   position: absolute;
-  left: 19px;
+  left: 51px;
   top: 1.5rem;
   display: flex;
   height: 3.5rem;
-  width: 275px;
+  width: 282px;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
@@ -723,11 +723,11 @@ video {
 
 .secoundflag {
   position: absolute;
-  left: 47px;
+  left: 79px;
   top: 104px;
   display: flex;
   height: 3.5rem;
-  width: 275px;
+  width: 282px;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
@@ -746,11 +746,11 @@ video {
 
 .thirdflag {
   position: absolute;
-  left: 19px;
+  left: 51px;
   top: 187px;
   display: flex;
   height: 3.5rem;
-  width: 275px;
+  width: 282px;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
@@ -801,8 +801,8 @@ video {
   right: 3rem;
 }
 
-.right-52 {
-  right: 13rem;
+.right-56 {
+  right: 14rem;
 }
 
 .top-0 {
@@ -871,8 +871,8 @@ video {
   width: 35%;
 }
 
-.w-\[45\%\] {
-  width: 45%;
+.w-\[50\%\] {
+  width: 50%;
 }
 
 .w-\[75\%\] {
@@ -1073,6 +1073,10 @@ video {
   line-height: 2rem;
 }
 
+.text-\[14px\] {
+  font-size: 14px;
+}
+
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -1081,6 +1085,15 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-\[16px\] {
+  font-size: 16px;
 }
 
 .font-bold {
@@ -1099,6 +1112,11 @@ video {
   font-weight: 600;
 }
 
+.text-\[\#E39F43\] {
+  --tw-text-opacity: 1;
+  color: rgb(227 159 67 / var(--tw-text-opacity));
+}
+
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -1108,9 +1126,24 @@ video {
   color: rgb(0 0 0 / 0.45);
 }
 
+.text-menu-c {
+  --tw-text-opacity: 1;
+  color: rgb(156 161 172 / var(--tw-text-opacity));
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\#0EC23E\] {
+  --tw-text-opacity: 1;
+  color: rgb(14 194 62 / var(--tw-text-opacity));
+}
+
+.text-\[\#FF8B85\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 139 133 / var(--tw-text-opacity));
 }
 
 .focus\:outline-none:focus {
