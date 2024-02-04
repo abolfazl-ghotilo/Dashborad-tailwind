@@ -33,4 +33,10 @@
     .info{
         @apply flex items-center gap-2;
     }
+    .times{
+        @apply text-menu-c font-bold hover:text-black duration-200 transition-all cursor-pointer;
+    }
+    .spanh{
+        @apply hover:text-black cursor-pointer duration-200 transition-all;
+    }
 }
