@@ -39,4 +39,10 @@
     .spanh{
         @apply hover:text-black cursor-pointer duration-200 transition-all;
     }
+    .days{
+        @apply font-bold text-sm;
+    }
+    .daysnum{
+        @apply text-black/30 font-semibold;
+    }
 }

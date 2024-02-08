@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../dist/style.css">
     <title>Dashboard</title>
 </head>
-<body class="bg-primary">
+<body class="bg-white">
     <main class="container pl-0 ml-0 pr-0 mr-0 flex">
         <nav class="flex flex-col items-center bg-nav-bg w-[18%] h-full">
             <div class="flex flex-col items-center py-5">
@@ -140,7 +140,7 @@
                 <button class="btns" type="button">Buy Now</button>
             </div>
         </nav>
-        <article class="bg-white w-[50%] p-7 flex flex-col gap-4">
+        <article class="bg-white w-[55%] p-7 flex flex-col gap-4">
             <div class="flex items-center justify-between gap-20">
                 <h1 class="text-2xl font-bold text-black">Dashboard</h1>
                 <div class="flex items-center gap-8">
@@ -152,10 +152,8 @@
                     </div>
                     <div class="flex items-center justify-center size-14 border-2 border-dashed border-menu-c ">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12 22.75C6.07 22.75 1.25 17.93 1.25 12C1.25 6.07 6.07 1.25 12 1.25C17.93 1.25 22.75 6.07 22.75 12C22.75 17.93 17.93 22.75 12 22.75ZM12 2.75C6.9 2.75 2.75 6.9 2.75 12C2.75 17.1 6.9 21.25 12 21.25C17.1 21.25 21.25 17.1 21.25 12C21.25 6.9 17.1 2.75 12 2.75Z" fill="#9CA1AC"/>
-                            <path d="M16 12.75H8C7.59 12.75 7.25 12.41 7.25 12C7.25 11.59 7.59 11.25 8 11.25H16C16.41 11.25 16.75 11.59 16.75 12C16.75 12.41 16.41 12.75 16 12.75Z" fill="#9CA1AC"/>
-                            <path d="M12 16.75C11.59 16.75 11.25 16.41 11.25 16V8C11.25 7.59 11.59 7.25 12 7.25C12.41 7.25 12.75 7.59 12.75 8V16C12.75 16.41 12.41 16.75 12 16.75Z" fill="#9CA1AC"/>
-                            </svg>
+                            <path d="M12.4599 22.75C12.2899 22.75 12.1199 22.75 11.9499 22.74C6.34995 22.49 1.66995 17.98 1.27995 12.48C0.939948 7.75999 3.66995 3.34999 8.06995 1.49999C9.31995 0.979992 9.97995 1.37999 10.2599 1.66999C10.5399 1.94999 10.9299 2.59999 10.4099 3.78999C9.94995 4.84999 9.71995 5.97999 9.72995 7.13999C9.74995 11.57 13.4299 15.33 17.9199 15.51C18.5699 15.54 19.2099 15.49 19.8299 15.38C21.1499 15.14 21.6999 15.67 21.9099 16.01C22.1199 16.35 22.3599 17.08 21.5599 18.16C19.4399 21.06 16.0699 22.75 12.4599 22.75ZM2.76995 12.37C3.10995 17.13 7.16995 21.03 12.0099 21.24C15.2999 21.4 18.4199 19.9 20.3399 17.28C20.4899 17.07 20.5599 16.92 20.5899 16.84C20.4999 16.83 20.3399 16.82 20.0899 16.87C19.3599 17 18.5999 17.05 17.8499 17.02C12.5699 16.81 8.24995 12.38 8.21995 7.15999C8.21995 5.77999 8.48995 4.44999 9.03995 3.19999C9.13995 2.97999 9.15995 2.82999 9.16995 2.74999C9.07995 2.74999 8.91995 2.76999 8.65995 2.87999C4.84995 4.47999 2.48995 8.29999 2.76995 12.37Z" fill="#9CA1AC"/>
+                            </svg>                            
                     </div>
                 </div>
             </div>
@@ -210,7 +208,7 @@
             </div>
             <div class="flex items-center justify-between gap-5 py-5">
                 <div class="flex items-center gap-5">
-                    <div class="radial-progress text-[#E39F43]" style="--value:80;" role="progressbar"><svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <div class="radial-progress text-[#E39F43] animate-[spin_1s_ease-in-out_1]" style="--value:80;" role="progressbar"><svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M3.34839 15.3485L15.3484 3.3485" stroke="black" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M3.34839 5.3485L3.34839 15.3485L13.3484 15.3485" stroke="black" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
@@ -221,9 +219,10 @@
                     </div>
                 </div>
                 <div class="flex items-center gap-5">
-                    <div class="radial-progress text-[#0EC23E]" style="--value:80;" role="progressbar"><svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M3.34839 15.3485L15.3484 3.3485" stroke="black" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M3.34839 5.3485L3.34839 15.3485L13.3484 15.3485" stroke="black" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <div class="radial-progress text-[#0EC23E] animate-[spin_1s_ease-in-out_1]" style="--value:80;" role="progressbar"><svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 3.34877L3 15.3488" stroke="black" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M15 13.3488L15 3.34877L5 3.34877" stroke="black" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                        
                         </svg>
                         </div>
                     <div>
@@ -232,7 +231,7 @@
                     </div>
                 </div>
                 <div class="flex items-center gap-5">
-                    <div class="radial-progress text-[#FF8B85]" style="--value:80;" role="progressbar"><svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <div class="radial-progress text-[#FF8B85] animate-[spin_1s_ease-in-out_1]" style="--value:80;" role="progressbar"><svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M3.34839 15.3485L15.3484 3.3485" stroke="black" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M3.34839 5.3485L3.34839 15.3485L13.3484 15.3485" stroke="black" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
@@ -302,7 +301,123 @@
                 </div>
             </div>
         </article>
-        <aside class="bg-black w-[35%] h"></aside>
+        <aside class="w-[30%] h-full bg-white py-3 pl-3">
+            <div class="flex items-center justify-end gap-10 py-7">
+                <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.6 24C8.96348 24 8.35303 23.7471 7.90294 23.2971C7.45286 22.847 7.2 22.2365 7.2 21.6H12C12 22.2365 11.7471 22.847 11.2971 23.2971C10.847 23.7471 10.2365 24 9.6 24ZM19.2 20.4H0V18L2.4 16.8V10.2C2.33678 8.50694 2.71912 6.82695 3.5088 5.328C3.8974 4.64072 4.42732 4.04365 5.06358 3.57618C5.69984 3.1087 6.42799 2.78144 7.2 2.616V0H11.5752C10.815 0.84961 10.3432 1.91803 10.2273 3.0522C10.1115 4.18638 10.3576 5.32811 10.9304 6.31385C11.5032 7.29959 12.3733 8.07875 13.416 8.53971C14.4588 9.00068 15.6206 9.11979 16.7352 8.88C16.7772 9.3084 16.7976 9.7524 16.7976 10.2V16.8L19.1976 18V20.4H19.2Z" fill="#CBCCCF"/>
+                    <circle cx="15.5" cy="3.5" r="3.5" fill="#DF0000"/>
+                    </svg>
+                    <svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.0046 9.21958C11.1578 9.21958 10.3649 9.5481 9.76449 10.1485C9.16694 10.7489 8.8356 11.5418 8.8356 12.3886C8.8356 13.2354 9.16694 14.0283 9.76449 14.6287C10.3649 15.2263 11.1578 15.5576 12.0046 15.5576C12.8514 15.5576 13.6443 15.2263 14.2447 14.6287C14.8423 14.0283 15.1736 13.2354 15.1736 12.3886C15.1736 11.5418 14.8423 10.7489 14.2447 10.1485C13.9515 9.85298 13.6024 9.6187 13.2179 9.45923C12.8333 9.29977 12.4209 9.21831 12.0046 9.21958ZM23.681 15.8889L21.8288 14.3059C21.9166 13.7678 21.9619 13.2184 21.9619 12.6718C21.9619 12.1252 21.9166 11.573 21.8288 11.0377L23.681 9.45464C23.8209 9.33486 23.921 9.17534 23.9681 8.99727C24.0151 8.8192 24.0068 8.63103 23.9443 8.45778L23.9188 8.38414C23.4091 6.95877 22.6454 5.63754 21.6646 4.48448L21.6136 4.425C21.4945 4.28497 21.3358 4.1843 21.1583 4.13627C20.9809 4.08825 20.793 4.09511 20.6196 4.15596L18.32 4.97441C17.4704 4.27774 16.5245 3.72833 15.4993 3.34601L15.0547 0.941641C15.0211 0.760512 14.9333 0.593878 14.8028 0.463876C14.6722 0.333874 14.5053 0.246658 14.324 0.213816L14.2476 0.199656C12.7749 -0.0665521 11.223 -0.0665521 9.75033 0.199656L9.67387 0.213816C9.49261 0.246658 9.32564 0.333874 9.19513 0.463876C9.06462 0.593878 8.97676 0.760512 8.94321 0.941641L8.49576 3.35734C7.48028 3.74271 6.5343 4.29078 5.69491 4.98008L3.37833 4.15596C3.20491 4.09463 3.01694 4.08752 2.83938 4.13557C2.66183 4.18363 2.5031 4.28458 2.38429 4.425L2.33332 4.48448C1.35427 5.63877 0.590706 6.95967 0.0790443 8.38414L0.0535562 8.45778C-0.0738839 8.81178 0.0309003 9.20826 0.316933 9.45464L2.19172 11.0547C2.10393 11.5871 2.06145 12.1309 2.06145 12.669C2.06145 13.2127 2.10393 13.7565 2.19172 14.2832L0.322596 15.8833C0.182683 16.0031 0.0825458 16.1626 0.0354993 16.3407C-0.0115473 16.5187 -0.00327368 16.7069 0.0592202 16.8801L0.0847082 16.9538C0.597301 18.3783 1.35345 19.6952 2.33898 20.8535L2.38996 20.9129C2.50906 21.053 2.66779 21.1536 2.84524 21.2017C3.02269 21.2497 3.21052 21.2428 3.38399 21.182L5.70057 20.3579C6.54451 21.0517 7.48473 21.6011 8.50142 21.9806L8.94888 24.3963C8.98242 24.5774 9.07028 24.744 9.20079 24.8741C9.3313 25.0041 9.49827 25.0913 9.67953 25.1241L9.756 25.1383C11.2431 25.4059 12.7661 25.4059 14.2532 25.1383L14.3297 25.1241C14.5109 25.0913 14.6779 25.0041 14.8084 24.8741C14.9389 24.744 15.0268 24.5774 15.0603 24.3963L15.505 21.9919C16.5301 21.6068 17.476 21.0602 18.3256 20.3635L20.6252 21.182C20.7986 21.2433 20.9866 21.2504 21.1642 21.2024C21.3417 21.1543 21.5004 21.0533 21.6193 20.9129L21.6702 20.8535C22.6558 19.6895 23.4119 18.3783 23.9245 16.9538L23.95 16.8801C24.0718 16.529 23.967 16.1353 23.681 15.8889ZM12.0046 17.3673C9.25473 17.3673 7.02595 15.1385 7.02595 12.3886C7.02595 9.63872 9.25473 7.40993 12.0046 7.40993C14.7545 7.40993 16.9833 9.63872 16.9833 12.3886C16.9833 15.1385 14.7545 17.3673 12.0046 17.3673Z" fill="#C3C5C8"/>
+                        </svg>                                                    
+            </div>
+            <div class="flex items-center bg-[#65A2B1] w-full h-[150px] rounded-2xl mt-5">
+                <img class="px-5 mt-5" src="../assets/images/vespa.png">
+                <div class="w-44 flex flex-col gap-2">
+                    <h1 class="text-white font-medium text-xl">Try PRO version</h1>
+                    <p class="text-white font-medium text-xs">Unlock full power of calender
+                        For 2 weeks for free!</p>
+                </div>
+            </div>
+            <div class="bg-nav-bg w-full h-[388px] mt-7 py-4 rounded-3xl px-9 flex flex-col items-center">
+                <div class="flex items-center gap-3 py-2">
+                    <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g filter="url(#filter0_d_0_1)">
+                        <circle cx="19" cy="17" r="17" fill="white"/>
+                        </g>
+                        <path d="M22 12L17 17L22 22" stroke="black" stroke-opacity="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <defs>
+                        <filter id="filter0_d_0_1" x="0" y="0" width="38" height="38" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dy="2"/>
+                        <feGaussianBlur stdDeviation="1"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+                        </filter>
+                        </defs>
+                        </svg>
+                        <div class="flex items-center gap-10 px-5">
+                            <span class="text-sm text-black/30 font-semibold">December</span>
+                            <span class="text-sm text-black font-semibold">January</span>
+                            <span class="text-sm text-black/30 font-semibold">February</span>
+                        </div> 
+                        <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_d_0_1)">
+                            <circle cx="19" cy="17" r="17" fill="white"/>
+                            </g>
+                            <path d="M17 12L22 17L17 22" stroke="black" stroke-opacity="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <defs>
+                            <filter id="filter0_d_0_1" x="0" y="0" width="38" height="38" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feOffset dy="2"/>
+                            <feGaussianBlur stdDeviation="1"/>
+                            <feComposite in2="hardAlpha" operator="out"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+                            </filter>
+                            </defs>
+                            </svg>                                                 
+                </div>
+                <div class="grid grid-cols-7 gap-6 w-full h-full text-center py-3">
+                    <span class="days">S</span>
+                    <span class="days">M</span>
+                    <span class="days">T</span>
+                    <span class="days">W</span>
+                    <span class="days">W</span>
+                    <span class="days">S</span>
+                    <span class="days">S</span>
+
+                    <span class="daysnum">26</span>
+                    <span class="daysnum">27</span>
+                    <span class="daysnum">28</span>
+                    <span class="daysnum">29</span>
+                    <span class="daysnum">30</span>
+                    <span class="daysnum">31</span>
+                    <span class="daysnum">1</span>
+
+                    <span class="days">S</span>
+                    <span class="days">M</span>
+                    <span class="days">T</span>
+                    <span class="days">W</span>
+                    <span class="days">W</span>
+                    <span class="days">S</span>
+                    <span class="days">S</span>
+                    <span class="days">S</span>
+                    <span class="days">M</span>
+                    <span class="days">T</span>
+                    <span class="days">W</span>
+                    <span class="days">W</span>
+                    <span class="days">S</span>
+                    <span class="days">S</span>
+                    <span class="days">S</span>
+                    <span class="days">M</span>
+                    <span class="days">T</span>
+                    <span class="days">W</span>
+                    <span class="days">W</span>
+                    <span class="days">S</span>
+                    <span class="days">S</span>
+                    <span class="days">S</span>
+                    <span class="days">M</span>
+                    <span class="days">T</span>
+                    <span class="days">W</span>
+                    <span class="days">W</span>
+                    <span class="days">S</span>
+                    <span class="days">S</span>
+                    <span class="days">S</span>
+                    <span class="days">M</span>
+                    <span class="days">T</span>
+                    <span class="days">W</span>
+                    <span class="days">W</span>
+                    <span class="days">S</span>
+                    <span class="days">S</span>
+                </div>
+            </div>
+        </aside>
     </main>
     <script src="https://cdn.tailwindcss.com"></script>
 </body>
