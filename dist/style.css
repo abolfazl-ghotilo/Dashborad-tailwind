@@ -682,7 +682,7 @@ video {
 
 .profiles {
   position: absolute;
-  right: 5rem;
+  right: 7rem;
   bottom: 10rem;
   display: flex;
   width: 9rem;
@@ -839,8 +839,8 @@ video {
   right: 3rem;
 }
 
-.right-56 {
-  right: 14rem;
+.right-64 {
+  right: 16rem;
 }
 
 .top-0 {

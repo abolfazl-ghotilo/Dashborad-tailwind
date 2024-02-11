@@ -19,7 +19,7 @@
         @apply h-1 w-9 rounded-full group-hover:bg-blue duration-300 transition-all;
     }
     .profiles{
-        @apply flex items-center justify-center gap-3 border border-purple py-2 w-36 rounded-full absolute right-20 bottom-40 bg-transparent;
+        @apply flex items-center justify-center gap-3 border border-purple py-2 w-36 rounded-full absolute right-28 bottom-40 bg-transparent;
     }
     .firstflag{
         @apply flex flex-col items-start justify-between py-1 pl-2 w-[282px] h-14 bg-gradient-to-r to-[#94D2FF] from-[#41A9FA] absolute left-[51px] top-6 border-l-[10px] border-[#0063B7];
