@@ -31,7 +31,7 @@
         @apply flex flex-col items-start justify-between py-1 pl-2 w-[282px] h-14 bg-gradient-to-r to-[#FFB215] from-[#FF8C56] absolute left-[51px] top-[187px] border-l-[10px] border-[#D25720];
     }
     .info{
-        @apply flex items-center gap-2 dark: text white/ 50px;
+        @apply flex items-center gap-2 dark:text-white/50;
     }
     .times{
         @apply text-menu-c font-bold hover:text-black duration-200 transition-all cursor-pointer;
@@ -40,10 +40,10 @@
         @apply hover:text-black cursor-pointer duration-200 transition-all;
     }
     .days{
-        @apply font-bold text-sm hover:bg-gradient-to-tr to-[#CB70EA] from-[#508EFF] rounded-full cursor-pointer py-1.5 px-2 duration-300 transition-all;
+        @apply hover:text-white font-bold text-sm hover:bg-gradient-to-tr to-[#CB70EA] from-[#508EFF] rounded-full cursor-pointer py-1.5 px-2 duration-300 transition-all dark:text-white;
     }
     .daysnum{
-        @apply text-black/30 hover:text-white font-semibold hover:bg-gradient-to-tr to-[#CB70EA] from-[#508EFF] rounded-full py-1 px-2 cursor-pointer duration-300 transition-all;
+        @apply text-black/40 hover:text-white font-semibold hover:bg-gradient-to-tr to-[#CB70EA] from-[#508EFF] rounded-full py-1 px-2 cursor-pointer duration-300 transition-all dark:text-white/45 dark:hover:text-white;
     }
     .days2{
         @apply text-[#397FFE] font-semibold hover:bg-gradient-to-tr to-[#CB70EA] from-[#508EFF] rounded-full py-1 px-2 cursor-pointer duration-300 transition-all hover:text-white;

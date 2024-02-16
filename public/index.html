@@ -4,14 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.1/dist/full.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="../dist/style.css">
+    <link rel="stylesheet" href="../dist/global.css">
     <title>Dashboard</title>
 </head>
 
-<body class="dark:bg-black duration-500">
+<body class="dark:bg-black">
     <main class="container pl-0 ml-0 pr-1 mr-1 flex dark:bg-black">
-        <nav class="flex flex-col items-center bg-nav-bg w-[18%] h-full dark:bg-nav-dark duration-500">
+        <nav class="flex flex-col items-center bg-nav-bg w-[18%] h-full dark:bg-nav-dark">
             <div class="flex flex-col items-center py-5">
                 <img src="../assets/images/Profile.svg">
                 <h1 class="text-black dark:text-white text-xl font-bold mt-3">Abolfazl ghotilo</h1>
@@ -253,7 +255,7 @@
                 <button class="btns" type="button">Buy Now</button>
             </div>
         </nav>
-        <article class="bg-white w-[55%] p-7 flex flex-col gap-4 dark:bg-black duration-500">
+        <article class="bg-white w-[55%] p-7 flex flex-col gap-4 dark:bg-black">
             <div class="flex items-center justify-between gap-20">
                 <h1 class="text-2xl font-bold text-black dark:text-white">Dashboard</h1>
                 <div class="flex items-center gap-8">
@@ -263,7 +265,7 @@
                                 d="M21.6386 19.9036L17.4844 15.7616C18.8247 14.054 19.552 11.9454 19.5493 9.77463C19.5493 7.84139 18.976 5.95157 17.9019 4.34414C16.8279 2.73671 15.3013 1.48387 13.5152 0.744053C11.7291 0.00423516 9.76379 -0.189335 7.8677 0.187821C5.9716 0.564977 4.22993 1.49592 2.86293 2.86293C1.49592 4.22993 0.564977 5.9716 0.187821 7.8677C-0.189335 9.76379 0.00423516 11.7291 0.744053 13.5152C1.48387 15.3013 2.73671 16.8279 4.34414 17.9019C5.95157 18.976 7.84139 19.5493 9.77463 19.5493C11.9454 19.552 14.054 18.8247 15.7616 17.4844L19.9036 21.6386C20.0172 21.7531 20.1523 21.844 20.3012 21.906C20.4501 21.9681 20.6098 22 20.7711 22C20.9324 22 21.0921 21.9681 21.241 21.906C21.3899 21.844 21.525 21.7531 21.6386 21.6386C21.7531 21.525 21.844 21.3899 21.906 21.241C21.9681 21.0921 22 20.9324 22 20.7711C22 20.6098 21.9681 20.4501 21.906 20.3012C21.844 20.1523 21.7531 20.0172 21.6386 19.9036ZM2.44366 9.77463C2.44366 8.3247 2.87362 6.90733 3.67915 5.70176C4.48469 4.49619 5.62963 3.55656 6.96919 3.0017C8.30875 2.44683 9.78276 2.30166 11.2048 2.58452C12.6269 2.86739 13.9332 3.5656 14.9584 4.59085C15.9837 5.61611 16.6819 6.92236 16.9647 8.34443C17.2476 9.7665 17.1024 11.2405 16.5476 12.5801C15.9927 13.9196 15.0531 15.0646 13.8475 15.8701C12.6419 16.6756 11.2246 17.1056 9.77463 17.1056C7.83034 17.1056 5.96568 16.3332 4.59085 14.9584C3.21603 13.5836 2.44366 11.7189 2.44366 9.77463Z"
                                 fill="black" fill-opacity="0.2" />
                         </svg>
-                        <input class="bg-transparent border-none focus:outline-none" type="search"
+                        <input class="bg-transparent border-none focus:outline-none dark:text-white" type="search"
                             placeholder="Search here...">
                     </div>
                     <button id="dark" onclick="change()"
@@ -331,7 +333,7 @@
                             class="flex items-center justify-end w-[75%] h-1 bg-gradient-to-r to-[#ffffff] from-[#558DFE]">
                             <img class="absolute right-0 pr-1" src="../assets/images/Rectangle 1359 (1).png"></div>
                     </div>
-                    <span class="text-white pr-3 dark:text-blue">80%</span>
+                    <span class="text-white font-medium pr-3 dark:text-black">80%</span>
                 </div>
                 <div>
                     <ul class="absolute flex items-center gap-8 bottom-4 left-12 text-black/45 font-bold">
@@ -384,9 +386,9 @@
                     <div class="radial-progress text-[#FF8B85] animate-[spin_1s_ease-in-out_1]" style="--value:80;"
                         role="progressbar"><svg width="19" height="19" viewBox="0 0 19 19" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
-                            <path d="M3.34839 15.3485L15.3484 3.3485" stroke="black" stroke-opacity="0.5"
+                            <path class="dark:stroke-white" d="M3.34839 15.3485L15.3484 3.3485" stroke="black" stroke-opacity="0.5"
                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M3.34839 5.3485L3.34839 15.3485L13.3484 15.3485" stroke="black"
+                            <path class="dark:stroke-white" d="M3.34839 5.3485L3.34839 15.3485L13.3484 15.3485" stroke="black"
                                 stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                     </div>
@@ -455,7 +457,7 @@
                 </div>
             </div>
         </article>
-        <aside class="w-[30%] h-full bg-white py-3 pl-3 dark:bg-black duration-500">
+        <aside class="w-[30%] h-full bg-white py-3 pl-3 dark:bg-black">
             <div class="flex items-center justify-end gap-10 py-7">
                 <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -477,14 +479,12 @@
                         For 2 weeks for free!</p>
                 </div>
             </div>
-            <div
-                class="bg-nav-bg w-full h-[460px] mt-7 py-4 rounded-3xl px-9 flex flex-col items-center dark:bg-nav-dark">
+            <div class="bg-nav-bg w-full h-[460px] mt-7 py-4 rounded-3xl px-9 flex flex-col items-center dark:bg-nav-dark">
                 <div class="flex items-center gap-3 py-2">
-                    <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="dark:hidden" width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g filter="url(#filter0_d_0_1)">
                             <circle cx="19" cy="17" r="17" fill="white" />
-                        </g>
-                        <path d="M22 12L17 17L22 22" stroke="black" stroke-opacity="0.5" stroke-linecap="round"
+                        </g><path d="M22 12L17 17L22 22" stroke="black" stroke-opacity="0.5" stroke-linecap="round"
                             stroke-linejoin="round" />
                         <defs>
                             <filter id="filter0_d_0_1" x="0" y="0" width="38" height="38" filterUnits="userSpaceOnUse"
@@ -501,12 +501,30 @@
                             </filter>
                         </defs>
                     </svg>
+                    <svg class="hidden dark:block" width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g filter="url(#filter0_d_0_1)">
+                        <circle cx="19" cy="17" r="17" fill="#292929"/>
+                        </g>
+                        <path d="M22 12L17 17L22 22" stroke="white" stroke-opacity="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <defs>
+                        <filter id="filter0_d_0_1" x="0" y="0" width="38" height="38" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dy="2"/>
+                        <feGaussianBlur stdDeviation="1"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+                        </filter>
+                        </defs>
+                        </svg>       
                     <div class="flex items-center gap-10 px-5">
-                        <span class="text-sm text-black/30 font-semibold dark:text-white cursor-pointer">December</span>
+                        <span class="text-sm text-black/30 font-semibold dark:text-white/45 cursor-pointer">December</span>
                         <span class="text-sm text-black font-semibold dark:text-white cursor-pointer">January</span>
-                        <span class="text-sm text-black/30 font-semibold dark:text-white cursor-pointer">February</span>
+                        <span class="text-sm text-black/30 font-semibold dark:text-white/45 cursor-pointer">February</span>
                     </div>
-                    <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="dark:hidden" width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g filter="url(#filter0_d_0_1)">
                             <circle cx="19" cy="17" r="17" fill="white" />
                         </g>
@@ -527,6 +545,24 @@
                             </filter>
                         </defs>
                     </svg>
+                    <svg class="hidden dark:block" width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g filter="url(#filter0_d_0_1)">
+                        <circle cx="19" cy="17" r="17" fill="#292929"/>
+                        </g>
+                        <path d="M17 12L22 17L17 22" stroke="white" stroke-opacity="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <defs>
+                        <filter id="filter0_d_0_1" x="0" y="0" width="38" height="38" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dy="2"/>
+                        <feGaussianBlur stdDeviation="1"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+                        </filter>
+                        </defs>
+                        </svg>                        
                 </div>
                 <div class="grid grid-cols-7 gap-6 w-full h-full text-center py-3">
                     <span class="days">S</span>
@@ -542,7 +578,7 @@
                     <span class="daysnum">29</span>
                     <span class="daysnum">30</span>
                     <span class="daysnum">31</span>
-                    <span class="daysnum">1</span>
+                    <span class="days2">1</span>
                     <span class="days2">2</span>
                     <span class="days2">3</span>
                     <span class="days2">4</span>
@@ -580,36 +616,38 @@
                     <span class="days2">6</span>
                 </div>
             </div>
-            <div
-                class="flex flex-col items-center justify-between mt-7 rounded-3xl bg-nav-bg w-full h-[210px] px-10 py-10">
+            <div class="flex flex-col items-center justify-between mt-7 rounded-3xl bg-nav-bg w-full h-[210px] px-10 py-10 dark:bg-black">
                 <div class="w-full h-5 flex items-center justify-between">
                     <div class="flex flex-col gap-3">
-                        <span class="text-black/55 font-semibold text-xl">Project Manager</span>
-                        <h1 class="text-black font-medium text-3xl">Client Meeting</h1>
+                        <span class="text-black/55 font-semibold text-xl dark:text-white/45">Project Manager</span>
+                        <h1 class="text-black font-medium text-3xl dark:text-white">Client Meeting</h1>
                     </div>
-                    <h1 class="flex items-center gap-3"><svg width="13" height="14" viewBox="0 0 13 14" fill="none"
+                    <h1 class="flex items-center gap-3 dark:text-white font-semibold"><svg width="13" height="14" viewBox="0 0 13 14" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12.6094 5.84766V7.88672H0.914062V5.84766H12.6094ZM7.85156 0.867188V13.2891H5.68359V0.867188H7.85156Z"
+                            <path class="dark:fill-white" d="M12.6094 5.84766V7.88672H0.914062V5.84766H12.6094ZM7.85156 0.867188V13.2891H5.68359V0.867188H7.85156Z"
                                 fill="black" fill-opacity="0.6" />
                         </svg>
                         NEW</h1>
                 </div>
-                <div class="bg-[#EDEFF3] w-full h-[64px] rounded-full p-2 flex items-center gap-12">
-                    <div class="bg-white w-[25%] h-full rounded-full flex items-center justify-center"><svg width="18"
+                <div class="bg-[#EDEFF3] w-full h-[64px] rounded-full p-2 flex items-center gap-12 dark:bg-[#141414]">
+                    <div class="bg-white w-[25%] h-full rounded-full flex items-center justify-center dark:bg-[#302F2F]"><svg width="18"
                             height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M13.5619 10.3644C13.3677 10.1879 13.1126 10.0938 12.8504 10.1019C12.5881 10.11 12.3393 10.2197 12.1564 10.4078L9.73854 12.8944C9.15655 12.7833 7.9865 12.4185 6.7821 11.2172C5.5777 10.0118 5.21295 8.83869 5.10484 8.26074L7.58941 5.84183C7.77777 5.65908 7.88762 5.41021 7.89573 5.1479C7.90384 4.88558 7.80957 4.6304 7.63286 4.43636L3.89943 0.331101C3.72265 0.136454 3.47696 0.0183856 3.21453 0.00197209C2.9521 -0.0144414 2.69361 0.0720926 2.49396 0.243196L0.301385 2.12355C0.126698 2.29887 0.0224325 2.53221 0.00836811 2.7793C-0.00678792 3.0319 -0.295763 9.01551 4.344 13.6573C8.39167 17.704 13.4619 18 14.8582 18C15.0623 18 15.1876 17.9939 15.221 17.9919C15.468 17.9781 15.7012 17.8734 15.8757 17.6979L17.7551 15.5043C17.9263 15.3048 18.013 15.0464 17.9968 14.7839C17.9806 14.5215 17.8627 14.2758 17.6682 14.0988L13.5619 10.3644Z"
+                            <path d="M13.5619 10.3644C13.3677 10.1879 13.1126 10.0938 12.8504 10.1019C12.5881 10.11 12.3393 10.2197 12.1564 10.4078L9.73854 12.8944C9.15655 12.7833 7.9865 12.4185 6.7821 11.2172C5.5777 10.0118 5.21295 8.83869 5.10484 8.26074L7.58941 5.84183C7.77777 5.65908 7.88762 5.41021 7.89573 5.1479C7.90384 4.88558 7.80957 4.6304 7.63286 4.43636L3.89943 0.331101C3.72265 0.136454 3.47696 0.0183856 3.21453 0.00197209C2.9521 -0.0144414 2.69361 0.0720926 2.49396 0.243196L0.301385 2.12355C0.126698 2.29887 0.0224325 2.53221 0.00836811 2.7793C-0.00678792 3.0319 -0.295763 9.01551 4.344 13.6573C8.39167 17.704 13.4619 18 14.8582 18C15.0623 18 15.1876 17.9939 15.221 17.9919C15.468 17.9781 15.7012 17.8734 15.8757 17.6979L17.7551 15.5043C17.9263 15.3048 18.013 15.0464 17.9968 14.7839C17.9806 14.5215 17.8627 14.2758 17.6682 14.0988L13.5619 10.3644Z"
                                 fill="#0EC23E" />
                         </svg>
                     </div>
-                    <span class="text-black/55 font-bold">Swipe To Call</span>
+                    <span class="text-black/55 font-bold dark:text-white/45">Swipe To Call</span>
                 </div>
             </div>
         </aside>
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
+    AOS.init({
+    duration: 800,
+    });
+
         let btn = document.getElementById("dark")
         let body = document.getElementById("bod")
         let darkflag = false
