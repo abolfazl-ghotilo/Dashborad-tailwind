@@ -13,7 +13,7 @@
         @apply flex items-center justify-center text-xl font-semibold text-white duration-300 transition-all border-2 rounded-lg py-2 px-6 bg-blue hover:text-blue hover:bg-white;
     }
     .ROC{
-        @apply text-black/45 font-semibold flex flex-col items-center gap-1 hover:text-blue duration-300 transition-all cursor-pointer;
+        @apply text-black/45 font-semibold flex flex-col items-center gap-1 hover:text-blue duration-300 transition-all cursor-pointer dark:text-white dark:hover:text-blue;
     }
     .underlineROC{
         @apply h-1 w-9 rounded-full group-hover:bg-blue duration-300 transition-all;
@@ -31,7 +31,7 @@
         @apply flex flex-col items-start justify-between py-1 pl-2 w-[282px] h-14 bg-gradient-to-r to-[#FFB215] from-[#FF8C56] absolute left-[51px] top-[187px] border-l-[10px] border-[#D25720];
     }
     .info{
-        @apply flex items-center gap-2;
+        @apply flex items-center gap-2 dark: text white/ 50px;
     }
     .times{
         @apply text-menu-c font-bold hover:text-black duration-200 transition-all cursor-pointer;
