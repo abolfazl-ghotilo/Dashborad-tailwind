@@ -948,6 +948,129 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.items {
+  display: flex;
+  width: 100%;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  border-radius: 1rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 248 248 / var(--tw-bg-opacity));
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+:is(.dark .items) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(22 22 22 / var(--tw-bg-opacity));
+}
+
+.items-txt {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  --tw-text-opacity: 1;
+  color: rgb(113 142 191 / var(--tw-text-opacity));
+}
+
+.items-span {
+  font-size: 25px;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+:is(.dark .items-span) {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.trad-main-sec {
+  grid-column: span 4 / span 4;
+  display: flex;
+  height: auto;
+  width: 100%;
+  flex-direction: column;
+  border-radius: 0.75rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 248 248 / var(--tw-bg-opacity));
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+:is(.dark .trad-main-sec) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(22 22 22 / var(--tw-bg-opacity));
+}
+
+.trad-main-card {
+  grid-column: span 2 / span 2;
+  width: 100%;
+  border-radius: 0.75rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(57 127 254 / var(--tw-bg-opacity));
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+:is(.dark .trad-main-card) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(22 22 22 / var(--tw-bg-opacity));
+}
+
+.trad-main-txt {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: start;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+:is(.dark .trad-main-txt) {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.trad-main-span {
+  font-weight: 400;
+  --tw-text-opacity: 1;
+  color: rgb(113 142 191 / var(--tw-text-opacity));
+}
+
+.spans {
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(113 142 191 / var(--tw-text-opacity));
+}
+
+.price-red {
+  width: 100%;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(254 92 115 / var(--tw-text-opacity));
+}
+
+.price-green {
+  width: 100%;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(22 219 170 / var(--tw-text-opacity));
+}
+
+.infoes {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  align-items: center;
+  padding-left: 1.25rem;
+  text-align: center;
+}
+
 .absolute {
   position: absolute;
 }
@@ -1139,6 +1262,10 @@ video {
   max-width: 400px;
 }
 
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 @keyframes spin {
   to {
     transform: rotate(360deg);
@@ -1159,6 +1286,14 @@ video {
 
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.grid-cols-6 {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 
 .grid-cols-7 {
@@ -1201,6 +1336,10 @@ video {
   gap: 3rem;
 }
 
+.gap-14 {
+  gap: 3.5rem;
+}
+
 .gap-2 {
   gap: 0.5rem;
 }
@@ -1235,6 +1374,10 @@ video {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-\[270px\] {
+  gap: 270px;
 }
 
 .gap-x-14 {
@@ -1323,6 +1466,11 @@ video {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
+.bg-blue {
+  --tw-bg-opacity: 1;
+  background-color: rgb(57 127 254 / var(--tw-bg-opacity));
+}
+
 .bg-gray {
   --tw-bg-opacity: 1;
   background-color: rgb(244 246 250 / var(--tw-bg-opacity));
@@ -1344,15 +1492,6 @@ video {
 
 .bg-white\/45 {
   background-color: rgb(255 255 255 / 0.45);
-}
-
-.bg-blue {
-  --tw-bg-opacity: 1;
-  background-color: rgb(57 127 254 / var(--tw-bg-opacity));
-}
-
-.bg-blue\/70 {
-  background-color: rgb(57 127 254 / 0.7);
 }
 
 .bg-gradient-to-r {
@@ -1545,6 +1684,11 @@ video {
 
 .text-\[16px\] {
   font-size: 16px;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .text-lg {

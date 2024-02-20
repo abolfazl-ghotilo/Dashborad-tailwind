@@ -57,5 +57,38 @@
     .lab{
         @apply text-black text-lg font-normal dark:text-white;
     }
+    .items{
+        @apply flex items-center justify-center gap-6 cursor-pointer bg-nav-bg w-full py-5 rounded-2xl dark:bg-nav-dark;
+    }
+    .items-txt{
+        @apply flex flex-col items-start text-light-gray;
+    }
+    .items-span{
+        @apply text-black text-[25px] font-medium dark:text-white;
+    }
+    .trad-main-sec{
+        @apply flex flex-col col-span-4 bg-nav-bg w-full h-auto py-1 dark:bg-nav-dark rounded-xl;
+    }
+    .trad-main-card{
+        @apply col-span-2 bg-blue w-full py-10 dark:bg-nav-dark rounded-xl;
+    }
+    .trad-main-txt{
+        @apply w-full font-medium text-black flex flex-col items-start text-start dark:text-white;
+    }
+    .trad-main-span{
+        @apply text-light-gray font-normal;
+    }
+    .spans{
+        @apply text-light-gray font-medium;
+    }
+    .price-red{
+        @apply text-[#FE5C73] font-medium w-[100%];
+    }
+    .price-green{
+        @apply text-[#16DBAA] font-medium w-[100%];
+    }
+    .infoes{
+        @apply grid grid-cols-5 pl-5 w-full text-center items-center;
+    }
 
 }
