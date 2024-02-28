@@ -67,10 +67,10 @@
         @apply text-black text-[25px] font-medium dark:text-white;
     }
     .trad-main-sec{
-        @apply flex flex-col col-span-4 bg-nav-bg w-full h-auto py-1 dark:bg-nav-dark rounded-xl;
+        @apply flex flex-col col-span-4 bg-nav-bg w-full h-auto py-1 dark:bg-nav-dark rounded-3xl;
     }
     .trad-main-card{
-        @apply col-span-2 bg-blue w-full py-10 dark:bg-nav-dark rounded-xl;
+        @apply w-full h-80 flex flex-col justify-center col-span-2  bg-gradient-to-br from-[#2D60FF] to-[#539BFF] dark:bg-nav-dark rounded-3xl cursor-pointer;
     }
     .trad-main-txt{
         @apply w-full font-medium text-black flex flex-col items-start text-start dark:text-white;
