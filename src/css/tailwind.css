@@ -16,7 +16,7 @@
         @apply text-black/45 font-semibold flex flex-col items-center gap-1 hover:text-blue duration-300 transition-all cursor-pointer dark:text-white dark:hover:text-blue;
     }
     .underlineROC{
-        @apply h-1 w-9 rounded-full group-hover:bg-blue duration-300 transition-all;
+        @apply h-1 w-24 rounded-full group-hover:bg-blue duration-300 transition-all;
     }
     .profiles{
         @apply flex items-center justify-center gap-3 border border-purple py-2 w-36 rounded-full absolute right-28 bottom-40 bg-transparent;
@@ -49,7 +49,7 @@
         @apply text-[#397FFE] font-semibold hover:bg-gradient-to-tr to-[#CB70EA] from-[#508EFF] rounded-full py-1 px-2 cursor-pointer duration-300 transition-all hover:text-white;
     }
     .P-form-s{
-        @apply flex items-start py-3.5 w-96 h-14 bg-transparent border-2 border-white rounded-2xl px-5;
+        @apply flex items-start py-3.5 w-96 h-14 bg-transparent border-2 border-black/65 dark:border-white rounded-2xl px-5;
     }
     .form-s{
         @apply w-full text-sm text-black/55 border-none outline-none bg-transparent dark:text-white/55;
@@ -90,5 +90,19 @@
     .infoes{
         @apply grid grid-cols-5 pl-5 w-full text-center items-center;
     }
-
+    .per-sec{
+        @apply flex flex-col items-start gap-3;
+    }
+    .per-sec-label{
+        @apply text-black text-xl font-normal dark:text-white;
+    }
+    .per-sec-inp{
+        @apply text-[#718EBF] px-4 py-4 w-full bg-transparent border-2 border-[#DFEAF2] rounded-2xl;
+    }
+    .ongoing-not-txt{
+        @apply text-black text-lg font-normal dark:text-white/70;
+    }
+    .com-sec-inp{
+        @apply text-[#718EBF] px-4 py-4 w-[410px] bg-transparent border-2 border-[#DFEAF2] rounded-2xl;
+    }
 }
