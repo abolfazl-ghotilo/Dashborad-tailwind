@@ -97,12 +97,12 @@
         @apply text-black text-xl font-normal dark:text-white;
     }
     .per-sec-inp{
-        @apply text-[#718EBF] px-4 py-4 w-full bg-transparent border-2 border-[#DFEAF2] rounded-2xl;
+        @apply text-[#718EBF] focus:outline-none px-4 py-4 w-full bg-transparent border-2 border-[#DFEAF2] rounded-2xl;
     }
     .ongoing-not-txt{
         @apply text-black text-lg font-normal dark:text-white/70;
     }
     .com-sec-inp{
-        @apply text-[#718EBF] px-4 py-4 w-[410px] bg-transparent border-2 border-[#DFEAF2] rounded-2xl;
+        @apply text-[#718EBF] focus:outline-none px-4 py-4 w-[410px] bg-transparent border-2 border-[#DFEAF2] rounded-2xl;
     }
 }

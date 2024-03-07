@@ -1116,6 +1116,11 @@ video {
   color: rgb(113 142 191 / var(--tw-text-opacity));
 }
 
+.per-sec-inp:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
 .ongoing-not-txt {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -1141,6 +1146,11 @@ video {
   padding-bottom: 1rem;
   --tw-text-opacity: 1;
   color: rgb(113 142 191 / var(--tw-text-opacity));
+}
+
+.com-sec-inp:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 
 .absolute {
