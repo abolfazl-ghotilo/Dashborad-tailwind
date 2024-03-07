@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.1/dist/full.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="../dist/style.css">
     <link rel="stylesheet" href="../dist/global.css">
-    <title>Completed</title>
+    <title>Ongoing</title>
 </head>
 <body class="dark:bg-black overflow-hidden">
     <main class="flex dark:bg-black">
@@ -294,42 +294,47 @@
             </section>
             <section class="bg-white w-full h-full px-10 py-8 dark:bg-black">
                 <div class="bg-nav-bg w-full h-[530px] rounded-2xl flex flex-col dark:bg-nav-dark">
-                    <div class="pt-5 pl-12 border-b-2 border-white/45 dark:border-white">
+                    <div class="pt-5 px-12 border-b-2 border-white/45 dark:border-white">
                         <ul class="flex items-center gap-10">
-                            <a href="profile.html"><li class="ROC group">Remaining
-                                <div class="underlineROC "></div>
-                            </li></a>
-                            <a href="Ongoing.html"><li class="ROC group">Ongoing
+                            <a href="profile.html"><li class="ROC group">Edit Profile
                                 <div class="underlineROC"></div>
                             </li></a>
-                            <a href="#"><li class="ROC group text-blue">Completed
+                            <a href="#"><li class="ROC group text-blue">Preferences
                                 <div class="underlineROC bg-blue"></div>
+                            </li></a>
+                            <a href="Security.html"><li class="ROC group">Security
+                                <div class="underlineROC"></div>
                             </li></a>
                         </ul>
                     </div>
-                    <div class="flex flex-col items-start gap-5 px-12 mt-4">
-                        <div>
-                            <h1 class="per-sec-label py-3">Two-factor Authentication</h1>
-                            <div class="flex items-center gap-3">
-                                <input type="checkbox" class="toggle [--tglbg:#397FFE] active:[--tglbg:black] bg-white hover:bg-white border-blue-500" checked />
-                                <h1 class="ongoing-not-txt">Enable or disable two factor authentication</h1>
-                            </div>
+                    <div class="flex flex-col gap-8 px-12 mt-4">
+                    <div class="grid grid-cols-2 gap-10 w-full py-3">
+                        <div class="per-sec">
+                                <label class="per-sec-label" for="see">Currency</label>
+                                <input id="see" class="per-sec-inp" type="search" value="USD">
                         </div>
-                        <div class="flex flex-col items-start gap-4 w-full">
-                            <h1 class="per-sec-label">Change Password</h1>
-                            <div class="flex flex-col gap-3 items-start">
-                                <div class="per-sec">
-                                        <label class="per-sec-label" for="see">Current Password</label>
-                                        <input id="see" class="com-sec-inp" type="search" value="**********">
-                                </div>
-                                <div class="per-sec">
-                                    <label class="per-sec-label" for="see">Time Zone</label>
-                                    <input id="see" class="com-sec-inp" type="search" value="(GMT-12:00) International Date Line West">
-                                </div>
-                            </div>
+                        <div class="per-sec">
+                            <label class="per-sec-label" for="see">Time Zone</label>
+                            <input id="see" class="per-sec-inp" type="search" value="(GMT-12:00) International Date Line West">
                         </div>
-                        <button class="py-3 px-10 text-xl font-medium self-end mt-5 bg-transparent text-blue border-2 border-blue rounded-xl hover:bg-blue hover:text-white" type="button">Save</button>  
                     </div>
+                    <div class="w-full flex flex-col items-start gap-3">
+                    <h1 class="per-sec-label py-2">Notification</h1>
+                    <div class="flex items-center gap-3">
+                        <input type="checkbox" class="toggle [--tglbg:#397FFE] active:[--tglbg:black] bg-white hover:bg-white border-blue-500" checked />
+                        <h1 class="ongoing-not-txt">I send or receive digita currency</h1>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <input type="checkbox" class="toggle [--tglbg:#DFEAF2] bg-white hover:bg-white border-[#DFEAF2]"/>
+                        <h1 class="ongoing-not-txt">I receive merchant order</h1>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <input type="checkbox" class="toggle [--tglbg:#397FFE] bg-white hover:bg-white border-blue-500" checked />
+                        <h1 class="ongoing-not-txt">There are recommendation for my account</h1>
+                    </div>
+                    </div>
+                    <button class="py-3 px-10 text-xl font-medium self-end mt-5 bg-transparent text-blue border-2 border-blue rounded-xl hover:bg-blue hover:text-white" type="button">Save</button>  
+                </div>
                 </div>
             </section>
         </article>
