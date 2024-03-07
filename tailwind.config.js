@@ -9,6 +9,7 @@ module.exports = {
       "black": "#000000",
       "nav-bg": "#F8F8F8",
       "blue": "#397FFE",
+      "red": "#FF82AC",
       "menu-c": "#9CA1AC",
       "gray": "#F4F6FA",
       "purple": "#6988B7",

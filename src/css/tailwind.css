@@ -105,4 +105,16 @@
     .com-sec-inp{
         @apply text-[#718EBF] focus:outline-none px-4 py-4 w-[410px] bg-transparent border-2 border-[#DFEAF2] rounded-2xl;
     }
+    .p-ch{
+        @apply flex flex-col items-center gap-3;
+    }
+    .chs{
+        @apply flex items-center gap-3;
+    }
+    .first-ch{
+        @apply self-end px-4 h-52 bg-blue rounded-xl;
+    }
+    .secound-ch{
+        @apply self-end px-4 h-52 bg-red rounded-xl;
+    }
 }

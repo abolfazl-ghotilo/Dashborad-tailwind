@@ -1153,6 +1153,39 @@ video {
   outline-offset: 2px;
 }
 
+.p-ch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.chs {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.first-ch {
+  height: 13rem;
+  align-self: flex-end;
+  border-radius: 0.75rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(57 127 254 / var(--tw-bg-opacity));
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.secound-ch {
+  height: 13rem;
+  align-self: flex-end;
+  border-radius: 0.75rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 130 172 / var(--tw-bg-opacity));
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .absolute {
   position: absolute;
 }
@@ -1191,6 +1224,14 @@ video {
 
 .top-\[45px\] {
   top: 45px;
+}
+
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+
+.col-span-4 {
+  grid-column: span 4 / span 4;
 }
 
 .mb-20 {
@@ -1256,6 +1297,22 @@ video {
   height: 5rem;
 }
 
+.h-32 {
+  height: 8rem;
+}
+
+.h-36 {
+  height: 9rem;
+}
+
+.h-40 {
+  height: 10rem;
+}
+
+.h-48 {
+  height: 12rem;
+}
+
 .h-5 {
   height: 1.25rem;
 }
@@ -1294,6 +1351,22 @@ video {
 
 .h-screen {
   height: 100vh;
+}
+
+.h-12 {
+  height: 3rem;
+}
+
+.h-24 {
+  height: 6rem;
+}
+
+.h-52 {
+  height: 13rem;
+}
+
+.h-14 {
+  height: 3.5rem;
 }
 
 .w-44 {
@@ -1667,6 +1740,11 @@ video {
   padding-right: 3rem;
 }
 
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -1782,6 +1860,10 @@ video {
   padding-right: 0.75rem;
 }
 
+.pr-\[250px\] {
+  padding-right: 250px;
+}
+
 .pt-2 {
   padding-top: 0.5rem;
 }
@@ -1879,6 +1961,11 @@ video {
   color: rgb(14 194 62 / var(--tw-text-opacity));
 }
 
+.text-\[\#718EBF\] {
+  --tw-text-opacity: 1;
+  color: rgb(113 142 191 / var(--tw-text-opacity));
+}
+
 .text-\[\#E39F43\] {
   --tw-text-opacity: 1;
   color: rgb(227 159 67 / var(--tw-text-opacity));
@@ -1923,6 +2010,10 @@ video {
 
 .text-white\/70 {
   color: rgb(255 255 255 / 0.7);
+}
+
+.text-\[\#\] {
+  color: #;
 }
 
 .shadow-sm {
