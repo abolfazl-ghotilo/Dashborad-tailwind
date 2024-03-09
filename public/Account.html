@@ -7,10 +7,10 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.1/dist/full.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="../dist/style.css">
     <link rel="stylesheet" href="../dist/global.css">
-    <title>Dashboard</title>
+    <title>Profile</title>
 </head>
 <body class="dark:bg-black">
-    <main class="container pl-0 ml-0 pr-1 mr-1 flex dark:bg-black">
+    <main class="flex dark:bg-black">
         <nav data-aos="fade-right" class="z-10 fixed flex flex-col items-center bg-nav-bg h-full w-[18%] dark:bg-nav-dark">
             <div class="flex flex-col items-center py-5">
                 <img src="../assets/images/Profile.svg">
@@ -19,7 +19,7 @@
             </div>
             <a href="profile.html"><button id="btn" class="btns" type="button">View profile</button></a>
             <div class="py-16 flex flex-col gap-5">
-                <a href="index.html"><span class="group menu-s bg-blue text-white"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                <a href="index.html"><span class="group menu-s"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_1_119)">
                         <path class="menu-svg-hover"
@@ -77,7 +77,7 @@
                         </defs>
                     </svg>
                     Shopping</span>
-                <a href="Account.html"><span class="group menu-s"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                <a href="Account.html"><span class="group menu-s bg-blue text-white"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_1_14)">
                             <path class="menu-svg-hover"
@@ -248,17 +248,17 @@
                     Aboout</span>
             </div>
         </nav>
-        <article data-aos="fade-down-left" class="bg-white w-[55%] p-7 flex flex-col gap-4 dark:bg-black ml-[297px]">
-            <div class="flex items-center justify-between gap-20">
-                <h1 class="text-2xl font-bold text-black dark:text-white">Dashboard</h1>
-                <div class="flex items-center gap-8">
-                    <div class="flex items-center gap-4 bg-gray py-4 px-8 max-w-[400px] dark:bg-nav-dark">
+        <article data-aos="fade-down" class="ml-[285px] w-[82%] h-full dark:bg-black">
+            <section class="flex items-center w-full justify-between h-20 bg-nav-bg px-10 py-2 shadow-sm dark:bg-nav-dark">
+                <h1 class="text-4xl font-medium text-black dark:text-white">Account</h1>
+                <div class="flex items-center gap-7">
+                    <div class="flex items-center gap-4 bg-white/45 py-4 px-8 w-[400px] dark:bg-black">
                         <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path class="dark:fill-menu-c"
                                 d="M21.6386 19.9036L17.4844 15.7616C18.8247 14.054 19.552 11.9454 19.5493 9.77463C19.5493 7.84139 18.976 5.95157 17.9019 4.34414C16.8279 2.73671 15.3013 1.48387 13.5152 0.744053C11.7291 0.00423516 9.76379 -0.189335 7.8677 0.187821C5.9716 0.564977 4.22993 1.49592 2.86293 2.86293C1.49592 4.22993 0.564977 5.9716 0.187821 7.8677C-0.189335 9.76379 0.00423516 11.7291 0.744053 13.5152C1.48387 15.3013 2.73671 16.8279 4.34414 17.9019C5.95157 18.976 7.84139 19.5493 9.77463 19.5493C11.9454 19.552 14.054 18.8247 15.7616 17.4844L19.9036 21.6386C20.0172 21.7531 20.1523 21.844 20.3012 21.906C20.4501 21.9681 20.6098 22 20.7711 22C20.9324 22 21.0921 21.9681 21.241 21.906C21.3899 21.844 21.525 21.7531 21.6386 21.6386C21.7531 21.525 21.844 21.3899 21.906 21.241C21.9681 21.0921 22 20.9324 22 20.7711C22 20.6098 21.9681 20.4501 21.906 20.3012C21.844 20.1523 21.7531 20.0172 21.6386 19.9036ZM2.44366 9.77463C2.44366 8.3247 2.87362 6.90733 3.67915 5.70176C4.48469 4.49619 5.62963 3.55656 6.96919 3.0017C8.30875 2.44683 9.78276 2.30166 11.2048 2.58452C12.6269 2.86739 13.9332 3.5656 14.9584 4.59085C15.9837 5.61611 16.6819 6.92236 16.9647 8.34443C17.2476 9.7665 17.1024 11.2405 16.5476 12.5801C15.9927 13.9196 15.0531 15.0646 13.8475 15.8701C12.6419 16.6756 11.2246 17.1056 9.77463 17.1056C7.83034 17.1056 5.96568 16.3332 4.59085 14.9584C3.21603 13.5836 2.44366 11.7189 2.44366 9.77463Z"
                                 fill="black" fill-opacity="0.2" />
                         </svg>
-                        <input class="bg-transparent border-none focus:outline-none dark:text-white" type="search"
+                        <input class="w-full bg-transparent border-none focus:outline-none dark:text-white" type="search"
                             placeholder="Search here...">
                     </div>
                     <button id="dark" onclick="change()"
@@ -279,360 +279,271 @@
                                 fill="#9CA1AC" />
                         </svg>
                     </button>
+                    <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.6 24C8.96348 24 8.35303 23.7471 7.90294 23.2971C7.45286 22.847 7.2 22.2365 7.2 21.6H12C12 22.2365 11.7471 22.847 11.2971 23.2971C10.847 23.7471 10.2365 24 9.6 24ZM19.2 20.4H0V18L2.4 16.8V10.2C2.33678 8.50694 2.71912 6.82695 3.5088 5.328C3.8974 4.64072 4.42732 4.04365 5.06358 3.57618C5.69984 3.1087 6.42799 2.78144 7.2 2.616V0H11.5752C10.815 0.84961 10.3432 1.91803 10.2273 3.0522C10.1115 4.18638 10.3576 5.32811 10.9304 6.31385C11.5032 7.29959 12.3733 8.07875 13.416 8.53971C14.4588 9.00068 15.6206 9.11979 16.7352 8.88C16.7772 9.3084 16.7976 9.7524 16.7976 10.2V16.8L19.1976 18V20.4H19.2Z"
+                            fill="#CBCCCF" />
+                        <circle cx="15.5" cy="3.5" r="3.5" fill="#DF0000" />
+                    </svg>
+                    <svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12.0046 9.21958C11.1578 9.21958 10.3649 9.5481 9.76449 10.1485C9.16694 10.7489 8.8356 11.5418 8.8356 12.3886C8.8356 13.2354 9.16694 14.0283 9.76449 14.6287C10.3649 15.2263 11.1578 15.5576 12.0046 15.5576C12.8514 15.5576 13.6443 15.2263 14.2447 14.6287C14.8423 14.0283 15.1736 13.2354 15.1736 12.3886C15.1736 11.5418 14.8423 10.7489 14.2447 10.1485C13.9515 9.85298 13.6024 9.6187 13.2179 9.45923C12.8333 9.29977 12.4209 9.21831 12.0046 9.21958ZM23.681 15.8889L21.8288 14.3059C21.9166 13.7678 21.9619 13.2184 21.9619 12.6718C21.9619 12.1252 21.9166 11.573 21.8288 11.0377L23.681 9.45464C23.8209 9.33486 23.921 9.17534 23.9681 8.99727C24.0151 8.8192 24.0068 8.63103 23.9443 8.45778L23.9188 8.38414C23.4091 6.95877 22.6454 5.63754 21.6646 4.48448L21.6136 4.425C21.4945 4.28497 21.3358 4.1843 21.1583 4.13627C20.9809 4.08825 20.793 4.09511 20.6196 4.15596L18.32 4.97441C17.4704 4.27774 16.5245 3.72833 15.4993 3.34601L15.0547 0.941641C15.0211 0.760512 14.9333 0.593878 14.8028 0.463876C14.6722 0.333874 14.5053 0.246658 14.324 0.213816L14.2476 0.199656C12.7749 -0.0665521 11.223 -0.0665521 9.75033 0.199656L9.67387 0.213816C9.49261 0.246658 9.32564 0.333874 9.19513 0.463876C9.06462 0.593878 8.97676 0.760512 8.94321 0.941641L8.49576 3.35734C7.48028 3.74271 6.5343 4.29078 5.69491 4.98008L3.37833 4.15596C3.20491 4.09463 3.01694 4.08752 2.83938 4.13557C2.66183 4.18363 2.5031 4.28458 2.38429 4.425L2.33332 4.48448C1.35427 5.63877 0.590706 6.95967 0.0790443 8.38414L0.0535562 8.45778C-0.0738839 8.81178 0.0309003 9.20826 0.316933 9.45464L2.19172 11.0547C2.10393 11.5871 2.06145 12.1309 2.06145 12.669C2.06145 13.2127 2.10393 13.7565 2.19172 14.2832L0.322596 15.8833C0.182683 16.0031 0.0825458 16.1626 0.0354993 16.3407C-0.0115473 16.5187 -0.00327368 16.7069 0.0592202 16.8801L0.0847082 16.9538C0.597301 18.3783 1.35345 19.6952 2.33898 20.8535L2.38996 20.9129C2.50906 21.053 2.66779 21.1536 2.84524 21.2017C3.02269 21.2497 3.21052 21.2428 3.38399 21.182L5.70057 20.3579C6.54451 21.0517 7.48473 21.6011 8.50142 21.9806L8.94888 24.3963C8.98242 24.5774 9.07028 24.744 9.20079 24.8741C9.3313 25.0041 9.49827 25.0913 9.67953 25.1241L9.756 25.1383C11.2431 25.4059 12.7661 25.4059 14.2532 25.1383L14.3297 25.1241C14.5109 25.0913 14.6779 25.0041 14.8084 24.8741C14.9389 24.744 15.0268 24.5774 15.0603 24.3963L15.505 21.9919C16.5301 21.6068 17.476 21.0602 18.3256 20.3635L20.6252 21.182C20.7986 21.2433 20.9866 21.2504 21.1642 21.2024C21.3417 21.1543 21.5004 21.0533 21.6193 20.9129L21.6702 20.8535C22.6558 19.6895 23.4119 18.3783 23.9245 16.9538L23.95 16.8801C24.0718 16.529 23.967 16.1353 23.681 15.8889ZM12.0046 17.3673C9.25473 17.3673 7.02595 15.1385 7.02595 12.3886C7.02595 9.63872 9.25473 7.40993 12.0046 7.40993C14.7545 7.40993 16.9833 9.63872 16.9833 12.3886C16.9833 15.1385 14.7545 17.3673 12.0046 17.3673Z"
+                            fill="#C3C5C8" />
+                    </svg>
                 </div>
-            </div>
-            <div class="flex items-center justify-between py-3">
-                <h1 class="text-2xl font-bold text-black dark:text-white">Ongoinh Projects</h1>
-                <div class="pt-2">
-                    <ul class="flex items-center gap-10">
-                        <li class="ROC group">Remaining
-                            <div class="underlineROC"></div>
-                        </li>
-                        <li class="ROC group">Ongoing
-                            <div class="underlineROC"></div>
-                        </li>
-                        <li class="ROC group">Completed
-                            <div class="underlineROC"></div>
-                        </li>
-                    </ul>
+            </section>
+            <section class="w-full h-full px-10 py-6 dark:bg-black">
+                <div class="flex items-center justify-between pb-5">
+                        <h1 class="text-2xl font-bold text-black dark:text-white">My Card</h1>
                 </div>
-            </div>
-            <div class="bg-nav-bg w-full h-80 rounded-lg relative dark:bg-nav-dark">
-                <div class="profiles">
-                    <img src="../assets/images/Ellipse 91.png">
-                    <img src="../assets/images/Ellipse 92.png">
-                    <img src="../assets/images/Ellipse 93.png">
-                </div>
-                <div>
-                    <img class="absolute right-64 top-[45px]" src="../assets/images/Group 2206.png">
-                    <div class="firstflag">
-                        <h1 class="text-white text-2xl font-semibold">App Design</h1>
-                        <span class="text-white text-xs">17 Augist, 2021</span>
+                <section class="grid grid-cols-3 gap-8 w-full h-80">
+                    <div data-tilt data-tilt-speed="200" class="trad-main-card-a">
+                    <div class="flex flex-col px-8 gap-14 pt-6 h-full">
+                        <div class="flex items-center justify-between w-full">
+                                <h1 class="flex flex-col items-start leading-3 text-white font-normal text-sm">Balance<span class="text-white text-2xl">$5,756</span></h1>
+                                <svg width="50" height="50" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect width="34.7713" height="34.7713" fill="url(#pattern0)"/>
+                                    <defs>
+                                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                            <use xlink:href="#image0_101_270" transform="scale(0.01)"/>
+                                        </pattern>
+                                <image id="image0_101_270" width="100" height="100" xlink:href="data:image/png;base64,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"/>
+                                </defs>
+                                </svg>
+                        </div>
+                        <div class="flex items-center gap-20">
+                            <h1 class="flex flex-col items-start leading-3 text-white/70 tracking-wide font-light text-sm">CARD HOLDER<span class="text-white text-lg font-medium">Eddy Cusuma</span></h1>
+                            <h1 class="flex flex-col items-start leading-3 text-white/70 tracking-wide font-light text-sm">VALID THRU<span class="text-white text-lg font-medium">12/22</span></h1>
+                        </div>
                     </div>
-                    <div class="secoundflag">
-                        <h1 class="text-white text-2xl font-semibold">App Design</h1>
-                        <span class="text-white text-xs">17 Augist, 2021</span>
+                        <div class="w-full py-6 bg-gradient-to-t from-white/0 to-white/15 px-8 ">
+                            <h1 class="flex items-center text-white text-3xl justify-between">3778 **** **** 1234<svg width="44" height="30" viewBox="0 0 44 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="15" cy="15" r="15" fill="white" fill-opacity="0.5"/>
+                                <circle cx="29" cy="15" r="15" fill="white" fill-opacity="0.5"/>
+                                </svg>
+                                </h1>
+                        </div>
                     </div>
-                    <div class="thirdflag">
-                        <h1 class="text-white text-2xl font-semibold">App Design</h1>
-                        <span class="text-white text-xs">17 Augist, 2021</span>
+                    <div data-tilt data-tilt-speed="200" class="trad-main-card-a bg-gradient-to-r from-[#4C49ED] to-[#0A06F4]">
+                        <div class="flex flex-col px-8 gap-14 pt-6 h-full">
+                            <div class="flex items-center justify-between w-full">
+                                    <h1 class="flex flex-col items-start leading-3 text-white font-normal text-sm">Balance<span class="text-white text-2xl">$5,756</span></h1>
+                                    <svg width="50" height="50" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <rect width="34.7713" height="34.7713" fill="url(#pattern0)"/>
+                                        <defs>
+                                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                                <use xlink:href="#image0_101_270" transform="scale(0.01)"/>
+                                            </pattern>
+                                    <image id="image0_101_270" width="100" height="100" xlink:href="data:image/png;base64,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"/>
+                                    </defs>
+                                    </svg>
+                            </div>
+                            <div class="flex items-center gap-20">
+                                <h1 class="flex flex-col items-start leading-3 text-white/70 tracking-wide font-light text-sm">CARD HOLDER<span class="text-white text-lg font-medium">Eddy Cusuma</span></h1>
+                                <h1 class="flex flex-col items-start leading-3 text-white/70 tracking-wide font-light text-sm">VALID THRU<span class="text-white text-lg font-medium">12/22</span></h1>
+                            </div>
+                        </div>
+                            <div class="w-full py-6 bg-gradient-to-t from-white/0 to-white/15 px-8 ">
+                                <h1 class="flex items-center text-white text-3xl justify-between">3778 **** **** 1234<svg width="44" height="30" viewBox="0 0 44 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="15" cy="15" r="15" fill="white" fill-opacity="0.5"/>
+                                    <circle cx="29" cy="15" r="15" fill="white" fill-opacity="0.5"/>
+                                    </svg>
+                                    </h1>
+                            </div>
+                    </div>
+                    <div data-tilt data-tilt-speed="200" class="trad-main-card-a bg-gradient-to-r from-[#0B60B0] to-[#000000ab]">
+                            <div class="flex flex-col px-8 gap-14 pt-6 h-full">
+                                <div class="flex items-center justify-between w-full">
+                                        <h1 class="flex flex-col items-start leading-3 text-white font-normal text-sm">Balance<span class="text-white text-2xl">$5,756</span></h1>
+                                        <svg width="50" height="50" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <rect width="34.7713" height="34.7713" fill="url(#pattern0)"/>
+                                            <defs>
+                                                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                                    <use xlink:href="#image0_101_270" transform="scale(0.01)"/>
+                                                </pattern>
+                                        <image id="image0_101_270" width="100" height="100" xlink:href="data:image/png;base64,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"/>
+                                        </defs>
+                                        </svg>
+                                </div>
+                                <div class="flex items-center gap-20">
+                                    <h1 class="flex flex-col items-start leading-3 text-white/70 tracking-wide font-light text-sm">CARD HOLDER<span class="text-white text-lg font-medium">Eddy Cusuma</span></h1>
+                                    <h1 class="flex flex-col items-start leading-3 text-white/70 tracking-wide font-light text-sm">VALID THRU<span class="text-white text-lg font-medium">12/22</span></h1>
+                                </div>
+                            </div>
+                                <div class="w-full py-6 bg-gradient-to-t from-white/0 to-white/15 px-8 ">
+                                    <h1 class="flex items-center text-white text-3xl justify-between">3778 **** **** 1234<svg width="44" height="30" viewBox="0 0 44 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="15" cy="15" r="15" fill="white" fill-opacity="0.5"/>
+                                        <circle cx="29" cy="15" r="15" fill="white" fill-opacity="0.5"/>
+                                        </svg>
+                                        </h1>
+                                </div>
+                    </div>
+                </section>
+                <div class="flex items-center justify-between w-full py-4">
+                    <h1 class="text-2xl font-medium text-black dark:text-white">Debit & Credit Overview</h1>
+                    <h1 class="pr-[237px] text-2xl font-bold text-black dark:text-white">Invoices Sent</h1>
+                </div>
+                <section class="grid grid-cols-6 gap-8 w-full h-auto dark:bg-black">
+                <div class="w-full flex flex-col gap-8 col-span-4 justify-between bg-nav-bg rounded-3xl px-8 py-6 dark:bg-nav-dark">
+                    <div class="flex items-center justify-between px-4">
+                        <h1 class="text-[#718EBF] text-lg"><span class="text-black dark:text-white">$7,560</span> Debited & <span class="text-black dark:text-white">$5,420</span> Credited in this Week</h1>
+                        <div class="flex items-center gap-8">
+                            <h1 class="flex items-center gap-2 text-[#718EBF]"><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_i_14_2)">
+                                <rect width="15" height="15" rx="5" fill="#397FFE"/>
+                                </g>
+                                <defs>
+                                <filter id="filter0_i_14_2" x="0" y="0" width="15" height="15" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                <feOffset/>
+                                <feGaussianBlur stdDeviation="7.5"/>
+                                <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                                <feColorMatrix type="matrix" values="0 0 0 0 0.0672743 0 0 0 0 0.203342 0 0 0 0 0.520833 0 0 0 0.5 0"/>
+                                <feBlend mode="normal" in2="shape" result="effect1_innerShadow_14_2"/>
+                                </filter>
+                                </defs>
+                                </svg>                                
+                                Debit</h1>
+                                <h1 class="flex items-center gap-2 text-[#718EBF]"><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g filter="url(#filter0_i_101_255)">
+                                    <rect width="15" height="15" rx="5" fill="#FF82AC"/>
+                                    </g>
+                                    <defs>
+                                    <filter id="filter0_i_101_255" x="0" y="0" width="15" height="15" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                    <feOffset/>
+                                    <feGaussianBlur stdDeviation="7.5"/>
+                                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                                    <feColorMatrix type="matrix" values="0 0 0 0 0.675 0 0 0 0 0.050625 0 0 0 0 0.42301 0 0 0 0.5 0"/>
+                                    <feBlend mode="normal" in2="shape" result="effect1_innerShadow_101_255"/>
+                                    </filter>
+                                    </defs>
+                                    </svg>
+                                Credit</h1>
+                        </div>    
+                    </div>           
+                    <div class="grid grid-cols-7 w-full items-end col-span-4 rounded-3xl">
+                        <div class="p-ch">
+                            <div class="chs">
+                                <div class="first-ch h-32"></div>
+                                <div class="secound-ch"></div>
+                            </div>
+                            <span class="text-[#718EBF] text-xl">Sat</span>
+                        </div>
+                        <div class="p-ch">
+                            <div class="chs">
+                                <div class="first-ch h-40"></div>
+                                <div class="secound-ch h-20"></div>
+                            </div>
+                            <span class="text-[#718EBF] text-xl">Sun</span>
+                        </div>
+                        <div class="p-ch">
+                            <div class="chs">
+                                <div class="first-ch h-48"></div>
+                                <div class="secound-ch h-36"></div>
+                            </div>
+                            <span class="text-[#718EBF] text-xl">Mon</span>
+                        </div>
+                        <div class="p-ch">
+                            <div class="chs">
+                                <div class="first-ch h-40"></div>
+                                <div class="secound-ch h-48"></div>
+                            </div>
+                            <span class="text-[#718EBF] text-xl">Tue</span>
+                        </div>
+                        <div class="p-ch">
+                            <div class="chs">
+                                <div class="first-ch h-24"></div>
+                                <div class="secound-ch h-52"></div>
+                            </div>
+                            <span class="text-[#718EBF] text-xl">Wen</span>
+                        </div>
+                        <div class="p-ch">
+                            <div class="chs">
+                                <div class="first-ch h-52"></div>
+                                <div class="secound-ch h-40"></div>
+                            </div>
+                            <span class="text-[#718EBF] text-xl">Thu</span>
+                        </div>
+                        <div class="p-ch">
+                            <div class="chs">
+                                <div class="first-ch h-36"></div>
+                                <div class="secound-ch h-14"></div>
+                            </div>
+                            <span class="text-[#718EBF] text-xl">Fri</span>
+                        </div>
                     </div>
                 </div>
-                <div class="text-end w-48 py-3 rounded-full bg-black absolute bottom-16 right-12  dark:bg-white
-                ">
-                    <div
-                        class="flex items-center justify-center w-[75%] h-full rounded-full bg-gradient-to-r to-[#CB70EA] from-[#508EFF] absolute top-0 ">
-                        <div
-                            class="flex items-center justify-end w-[75%] h-1 bg-gradient-to-r to-[#ffffff] from-[#558DFE]">
-                            <img class="absolute right-0 pr-1" src="../assets/images/Rectangle 1359 (1).png"></div>
+                    <div class="grid grid-cols-1 gap-4 w-full col-span-2 rounded-3xl px-2 py-4 bg-nav-bg dark:bg-nav-dark">
+                        <div class="sent-items">
+                            <div class="flex items-center gap-3">
+                                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="60" height="60" rx="20" fill="#DCFAF8"/>
+                                    <g clip-path="url(#clip0_101_281)">
+                                    <path d="M40.0476 35.2021C39.2662 34.733 37.641 33.7564 37.641 31.216C37.641 29.0719 39.0759 27.9898 39.8466 27.4086L39.8627 27.3964C40.1721 27.1631 40.2458 26.7287 40.0311 26.4061C38.3091 23.8207 35.3519 23.7461 34.777 23.7568H34.7735C34.3792 23.7573 34.0029 23.8027 33.6461 23.8744C33.7779 23.769 33.9058 23.6567 34.0287 23.5377C35.2606 22.3458 35.9376 20.5873 35.8854 18.7116C35.8741 18.3158 35.5501 18 35.1538 18C33.8213 18 32.3063 18.796 31.1999 20.0777C30.0851 21.3692 29.5644 22.9163 29.7718 24.322C29.7889 24.4386 29.8338 24.545 29.8982 24.6363C29.703 24.5709 29.4965 24.4948 29.2925 24.4196C28.5174 24.1341 27.6384 23.8105 26.8155 23.8105C26.7989 23.8105 25.1258 23.8227 23.4552 24.8603C21.9939 25.7686 20.2515 27.6589 20.2515 31.5093C20.2515 33.5119 21.0338 36.3154 22.2447 38.6523C23.0813 40.2668 24.8174 42.9766 27.0469 42.9893H27.0708C28.6966 42.9893 30.0436 42.0292 30.9598 42.0292C32.5245 42.0292 33.0814 43 34.7735 43C36.2905 43 37.7605 41.8477 39.1432 39.5757C39.6508 38.7411 40.0457 37.9158 40.2873 37.3701C40.7485 36.3305 40.7485 36.1919 40.7485 36.0904C40.7485 35.6233 40.3922 35.409 40.0476 35.2021ZM32.3083 21.0343C32.9091 20.3384 33.6661 19.822 34.3831 19.594C34.2459 20.7308 33.7657 21.7552 33.0106 22.4854C32.4816 22.9974 31.8466 23.3302 31.2018 23.4449C31.2702 22.6406 31.6548 21.7913 32.3083 21.0343ZM37.8216 38.9295C36.7766 40.6104 35.694 41.5358 34.7735 41.5358C33.507 41.5358 32.915 40.565 30.9598 40.565C29.6405 40.565 28.3818 41.5319 27.0552 41.525C26.0205 41.5192 24.6753 40.1604 23.545 37.9787C22.4336 35.8346 21.7157 33.2952 21.7157 31.5093C21.7157 28.9811 22.5469 27.1718 24.1848 26.1313C25.4602 25.3216 26.7648 25.2762 26.8199 25.2747C27.963 25.2776 29.5497 26.2894 30.706 26.2894C31.747 26.2894 33.1409 25.221 34.7789 25.221H34.8058C35.203 25.2132 37.0787 25.2576 38.3965 26.6877C37.4653 27.472 36.1768 28.8825 36.1768 31.216C36.1768 34.3855 38.1813 35.777 39.1281 36.3573C38.8924 36.9284 38.4429 37.9304 37.8216 38.9295Z" fill="#16DBCC"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_101_281">
+                                    <rect width="25" height="25" fill="white" transform="translate(18 18)"/>
+                                    </clipPath>
+                                    </defs>
+                                    </svg>
+                                <h1 class="sent-items-name">Apple Store<span class="sent-time">5h ago</span></h1>
+                            </div> 
+                            <span class="sent-time">$450</span>                          
+                        </div>
+                        <div class="sent-items">
+                            <div class="flex items-center gap-3">
+                                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="60" height="60" rx="20" fill="#FFF5D9"/>
+                                    <g clip-path="url(#clip0_0_1)">
+                                    <path d="M39.3389 34.1611C37.9774 32.7997 36.3569 31.7918 34.5888 31.1817C36.4825 29.8775 37.7266 27.6947 37.7266 25.2266C37.7266 21.2418 34.4847 18 30.5 18C26.5153 18 23.2734 21.2418 23.2734 25.2266C23.2734 27.6947 24.5175 29.8775 26.4112 31.1817C24.6432 31.7918 23.0227 32.7997 21.6612 34.1611C19.3002 36.5221 18 39.6611 18 43H19.9531C19.9531 37.1844 24.6844 32.4531 30.5 32.4531C36.3156 32.4531 41.0469 37.1844 41.0469 43H43C43 39.6611 41.6998 36.5221 39.3389 34.1611ZM30.5 30.5C27.5922 30.5 25.2266 28.1344 25.2266 25.2266C25.2266 22.3187 27.5922 19.9531 30.5 19.9531C33.4078 19.9531 35.7734 22.3187 35.7734 25.2266C35.7734 28.1344 33.4078 30.5 30.5 30.5Z" fill="#FFBB38"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_0_1">
+                                    <rect width="25" height="25" fill="white" transform="translate(18 18)"/>
+                                    </clipPath>
+                                    </defs>
+                                    </svg>                                                                     
+                                <h1 class="sent-items-name">Michael<span class="sent-time">2 days ago</span></h1>
+                            </div> 
+                            <span class="sent-time">$160</span>                          
+                        </div>
+                        <div class="sent-items">
+                            <div class="flex items-center gap-3">
+                                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="60" height="60" rx="20" fill="#E7EDFF"/>
+                                    <g clip-path="url(#clip0_0_1)">
+                                    <path d="M38.2994 31.265C37.8337 31.265 37.3736 31.3332 36.9314 31.4675L31.2315 33.0454V24.9836C31.2315 24.5798 31.5601 24.2512 31.9639 24.2512C32.3678 24.2512 32.6963 24.5798 32.6963 24.9836V30.6813H33.4288C36.2558 30.6813 38.5557 28.3813 38.5557 25.5543C38.5557 23.2667 37.0191 21.237 34.8161 20.6175L25.3559 18V30.556L21.5599 31.6067C21.1117 31.7189 20.682 31.8971 20.2826 32.1366C18.0601 33.4691 17.3361 36.3615 18.6687 38.584C19.1965 39.4642 19.9767 40.1334 20.925 40.5193C21.4904 40.7494 22.0993 40.8661 22.7074 40.866C23.085 40.866 23.4623 40.821 23.8286 40.7303L25.3559 40.3077V41.5762L30.4991 43L39.6583 40.4646L39.6775 40.459C40.6192 40.1705 41.465 39.576 42.0592 38.7849C42.6741 37.9663 42.9991 36.9911 42.9991 35.9648C42.9991 33.3733 40.8908 31.265 38.2994 31.265ZM25.3558 34.6719L21.504 35.7381L21.8949 37.1499L25.3558 36.1918V38.7878L23.4669 39.3107C23.2075 39.3742 22.9467 39.405 22.6894 39.405C21.5732 39.4049 20.5218 38.8262 19.925 37.8307C19.0078 36.3009 19.5061 34.3101 21.0359 33.3928C21.3134 33.2264 21.6117 33.103 21.9223 33.026L25.3558 32.0758V34.6719ZM29.7666 24.9836V41.2773L26.8207 40.4618V19.9252L34.4226 22.0286C35.9936 22.4703 37.0909 23.9202 37.0909 25.5544C37.0909 27.3229 35.8306 28.8026 34.1612 29.1429V24.9836C34.1612 23.7721 33.1755 22.7864 31.9639 22.7864C30.7523 22.7864 29.7666 23.7721 29.7666 24.9836ZM39.2573 39.0556L31.2315 41.2773V38.6813L39.4946 36.3938L39.1038 34.9821L31.2315 37.1613V34.5653L37.3314 32.8767L37.3505 32.8711C37.6565 32.7774 37.9758 32.7299 38.2994 32.7299C40.0831 32.7299 41.5343 34.1811 41.5343 35.9647C41.5342 37.3931 40.6195 38.6341 39.2573 39.0556Z" fill="#396AFF"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_0_1">
+                                    <rect width="25" height="25" fill="white" transform="translate(18 18)"/>
+                                    </clipPath>
+                                    </defs>
+                                    </svg>                                    
+                                <h1 class="sent-items-name">Playstation<span class="sent-time">5 days ago</span></h1>
+                            </div> 
+                            <span class="sent-time">$1085</span>                          
+                        </div>
+                        <div class="sent-items">
+                            <div class="flex items-center gap-3">
+                                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="60" height="60" rx="20" fill="#FFE0EB"/>
+                                    <path d="M39.3389 34.1611C37.9774 32.7997 36.3569 31.7918 34.5888 31.1817C36.4825 29.8775 37.7266 27.6947 37.7266 25.2266C37.7266 21.2418 34.4847 18 30.5 18C26.5153 18 23.2734 21.2418 23.2734 25.2266C23.2734 27.6947 24.5175 29.8775 26.4112 31.1817C24.6432 31.7918 23.0227 32.7997 21.6612 34.1611C19.3002 36.5221 18 39.6611 18 43H19.9531C19.9531 37.1844 24.6844 32.4531 30.5 32.4531C36.3156 32.4531 41.0469 37.1844 41.0469 43H43C43 39.6611 41.6998 36.5221 39.3389 34.1611ZM30.5 30.5C27.5922 30.5 25.2266 28.1344 25.2266 25.2266C25.2266 22.3187 27.5922 19.9531 30.5 19.9531C33.4078 19.9531 35.7734 22.3187 35.7734 25.2266C35.7734 28.1344 33.4078 30.5 30.5 30.5Z" fill="#FF82AC"/>
+                                    </svg>                                    
+                                <h1 class="sent-items-name">William<span class="sent-time">10 days ago</span></h1>
+                            </div> 
+                            <span class="sent-time">$90</span>                          
+                        </div>
                     </div>
-                    <span class="text-white font-medium pr-3 dark:text-black">80%</span>
-                </div>
-                <div>
-                    <ul class="absolute flex items-center gap-8 bottom-4 left-12 text-black/45 font-bold">
-                        <li class="info">
-                            <hr class="w-7 h-1 border-none bg-[#0063B7] rounded-full">Todo
-                        </li>
-                        <li class="info">
-                            <hr class="w-7 h-1 border-none bg-[#FF4955] rounded-full">Inprogress
-                        </li>
-                        <li class="info">
-                            <hr class="w-7 h-1 border-none bg-[#D25720] rounded-full">Complated
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="flex items-center justify-between gap-5 py-5">
-                <div class="flex items-center gap-5">
-                    <div class="radial-progress text-[#E39F43] animate-[spin_1s_ease-in-out_1]" style="--value:80;"
-                        role="progressbar"><svg width="19" height="19" viewBox="0 0 19 19" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path class="dark:stroke-white" d="M3.34839 15.3485L15.3484 3.3485" stroke="black"
-                                stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            <path class="dark:stroke-white" d="M3.34839 5.3485L3.34839 15.3485L13.3484 15.3485"
-                                stroke="black" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                    </div>
-                    <div>
-                        <h1 class="text-[16px] text-black font-semibold dark:text-white">Tasks Remaining</h1>
-                        <span class="text-menu-c text-3xl font-semibold">12/15</span>
-                    </div>
-                </div>
-                <div class="flex items-center gap-5">
-                    <div class="radial-progress text-[#0EC23E] animate-[spin_1s_ease-in-out_1]" style="--value:80;"
-                        role="progressbar"><svg width="18" height="19" viewBox="0 0 18 19" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path class="dark:stroke-white" d="M15 3.34877L3 15.3488" stroke="black"
-                                stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            <path class="dark:stroke-white" d="M15 13.3488L15 3.34877L5 3.34877" stroke="black"
-                                stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                        </svg>
-                    </div>
-                    <div>
-                        <h1 class="text-[16px] text-black font-semibold dark:text-white">Tasks Left</h1>
-                        <span class="text-menu-c text-3xl font-semibold">12/15</span>
-                    </div>
-                </div>
-                <div class="flex items-center gap-5">
-                    <div class="radial-progress text-[#FF8B85] animate-[spin_1s_ease-in-out_1]" style="--value:80;"
-                        role="progressbar"><svg width="19" height="19" viewBox="0 0 19 19" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path class="dark:stroke-white" d="M3.34839 15.3485L15.3484 3.3485" stroke="black" stroke-opacity="0.5"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            <path class="dark:stroke-white" d="M3.34839 5.3485L3.34839 15.3485L13.3484 15.3485" stroke="black"
-                                stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </div>
-                    <div>
-                        <h1 class="text-[16px] text-black font-semibold dark:text-white">Tasks Done</h1>
-                        <span class="text-menu-c text-3xl font-semibold">12/15</span>
-                    </div>
-                </div>
-            </div>
-            <div class="flex items-center justify-between">
-                <h1 class="text-2xl font-bold text-black dark:text-white">Progress Stats</h1>
-                <div class="flex items-center gap-7">
-                    <span class="times  dark:text-white dark:hover:text-white">day</span>
-                    <span class="times  dark:text-white dark:hover:text-white">week</span>
-                    <span class="times  dark:text-white dark:hover:text-white">month</span>
-                </div>
-            </div>
-            <div class="grid grid-cols-12 items-end gap-5 py-6">
-                <div class="flex flex-col items-center gap-">
-                    <div class="py-28 px-5 bg-gray rounded-t-lg dark:bg-nav-dark"></div>
-                    <span class="text-menu-c text-lg font-semibold spanh">Jan</span>
-                </div>
-                <div class="flex flex-col items-center gap-">
-                    <div class="py-20 px-5 bg-gradient-to-t to-[#8287FD] from-[#DD95FF] rounded-t-lg"></div>
-                    <span class="text-menu-c text-lg font-semibold spanh">Feb</span>
-                </div>
-                <div class="flex flex-col items-center gap-">
-                    <div class="py-12 px-5 bg-gray rounded-t-lg dark:bg-nav-dark"></div>
-                    <span class="text-menu-c text-lg font-semibold spanh">Mar</span>
-                </div>
-                <div class="flex flex-col items-center gap-">
-                    <div class="py-24 px-5 bg-gray rounded-t-lg spanh dark:bg-nav-dark"></div>
-                    <span class="text-menu-c text-lg font-semibold spanh">Apr</span>
-                </div>
-                <div class="flex flex-col items-center gap-">
-                    <div class="py-32 px-5 bg-gradient-to-t to-[#8287FD] from-[#DD95FF] rounded-t-lg"></div>
-                    <span class="text-menu-c text-lg font-semibold spanh">May</span>
-                </div>
-                <div class="flex flex-col items-center gap-">
-                    <div class="py-24 px-5 bg-gray rounded-t-lg dark:bg-nav-dark"></div>
-                    <span class="text-menu-c text-lg font-semibold spanh">Jun</span>
-                </div>
-                <div class="flex flex-col items-center gap-">
-                    <div class="py-[50px] px-5 bg-gradient-to-t to-[#8287FD] from-[#DD95FF] rounded-t-lg"></div>
-                    <span class="text-menu-c text-lg font-semibold spanh">Jul</span>
-                </div>
-                <div class="flex flex-col items-center gap-">
-                    <div class="py-20 px-5 bg-gray rounded-t-lg dark:bg-nav-dark"></div>
-                    <span class="text-menu-c text-lg font-semibold spanh">Aug</span>
-                </div>
-                <div class="flex flex-col items-center gap-">
-                    <div class="py-[115px] px-5 bg-gradient-to-t to-[#8287FD] from-[#DD95FF] rounded-t-lg"></div>
-                    <span class="text-menu-c text-lg font-semibold spanh">Sep</span>
-                </div>
-                <div class="flex flex-col items-center gap-">
-                    <div class="py-16 px-5 bg-gray rounded-t-lg dark:bg-nav-dark"></div>
-                    <span class="text-menu-c text-lg font-semibold spanh">Oct</span>
-                </div>
-                <div class="flex flex-col items-center gap-">
-                    <div class="py-24 px-5 bg-gradient-to-t to-[#8287FD] from-[#DD95FF] rounded-t-lg"></div>
-                    <span class="text-menu-c text-lg font-semibold spanh">Nov</span>
-                </div>
-                <div class="flex flex-col items-center gap-">
-                    <div class="py-12 px-5 bg-gray rounded-t-lg dark:bg-nav-dark"></div>
-                    <span class="text-menu-c text-lg font-semibold spanh">Dec</span>
-                </div>
-            </div>
+                </section>
+            </section>
         </article>
-        <aside data-aos="flip-left" class="w-[30%] h-full bg-white py-3 pl-3 dark:bg-black">
-            <div class="flex items-center justify-end gap-10 py-7">
-                <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M9.6 24C8.96348 24 8.35303 23.7471 7.90294 23.2971C7.45286 22.847 7.2 22.2365 7.2 21.6H12C12 22.2365 11.7471 22.847 11.2971 23.2971C10.847 23.7471 10.2365 24 9.6 24ZM19.2 20.4H0V18L2.4 16.8V10.2C2.33678 8.50694 2.71912 6.82695 3.5088 5.328C3.8974 4.64072 4.42732 4.04365 5.06358 3.57618C5.69984 3.1087 6.42799 2.78144 7.2 2.616V0H11.5752C10.815 0.84961 10.3432 1.91803 10.2273 3.0522C10.1115 4.18638 10.3576 5.32811 10.9304 6.31385C11.5032 7.29959 12.3733 8.07875 13.416 8.53971C14.4588 9.00068 15.6206 9.11979 16.7352 8.88C16.7772 9.3084 16.7976 9.7524 16.7976 10.2V16.8L19.1976 18V20.4H19.2Z"
-                        fill="#CBCCCF" />
-                    <circle cx="15.5" cy="3.5" r="3.5" fill="#DF0000" />
-                </svg>
-                <svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M12.0046 9.21958C11.1578 9.21958 10.3649 9.5481 9.76449 10.1485C9.16694 10.7489 8.8356 11.5418 8.8356 12.3886C8.8356 13.2354 9.16694 14.0283 9.76449 14.6287C10.3649 15.2263 11.1578 15.5576 12.0046 15.5576C12.8514 15.5576 13.6443 15.2263 14.2447 14.6287C14.8423 14.0283 15.1736 13.2354 15.1736 12.3886C15.1736 11.5418 14.8423 10.7489 14.2447 10.1485C13.9515 9.85298 13.6024 9.6187 13.2179 9.45923C12.8333 9.29977 12.4209 9.21831 12.0046 9.21958ZM23.681 15.8889L21.8288 14.3059C21.9166 13.7678 21.9619 13.2184 21.9619 12.6718C21.9619 12.1252 21.9166 11.573 21.8288 11.0377L23.681 9.45464C23.8209 9.33486 23.921 9.17534 23.9681 8.99727C24.0151 8.8192 24.0068 8.63103 23.9443 8.45778L23.9188 8.38414C23.4091 6.95877 22.6454 5.63754 21.6646 4.48448L21.6136 4.425C21.4945 4.28497 21.3358 4.1843 21.1583 4.13627C20.9809 4.08825 20.793 4.09511 20.6196 4.15596L18.32 4.97441C17.4704 4.27774 16.5245 3.72833 15.4993 3.34601L15.0547 0.941641C15.0211 0.760512 14.9333 0.593878 14.8028 0.463876C14.6722 0.333874 14.5053 0.246658 14.324 0.213816L14.2476 0.199656C12.7749 -0.0665521 11.223 -0.0665521 9.75033 0.199656L9.67387 0.213816C9.49261 0.246658 9.32564 0.333874 9.19513 0.463876C9.06462 0.593878 8.97676 0.760512 8.94321 0.941641L8.49576 3.35734C7.48028 3.74271 6.5343 4.29078 5.69491 4.98008L3.37833 4.15596C3.20491 4.09463 3.01694 4.08752 2.83938 4.13557C2.66183 4.18363 2.5031 4.28458 2.38429 4.425L2.33332 4.48448C1.35427 5.63877 0.590706 6.95967 0.0790443 8.38414L0.0535562 8.45778C-0.0738839 8.81178 0.0309003 9.20826 0.316933 9.45464L2.19172 11.0547C2.10393 11.5871 2.06145 12.1309 2.06145 12.669C2.06145 13.2127 2.10393 13.7565 2.19172 14.2832L0.322596 15.8833C0.182683 16.0031 0.0825458 16.1626 0.0354993 16.3407C-0.0115473 16.5187 -0.00327368 16.7069 0.0592202 16.8801L0.0847082 16.9538C0.597301 18.3783 1.35345 19.6952 2.33898 20.8535L2.38996 20.9129C2.50906 21.053 2.66779 21.1536 2.84524 21.2017C3.02269 21.2497 3.21052 21.2428 3.38399 21.182L5.70057 20.3579C6.54451 21.0517 7.48473 21.6011 8.50142 21.9806L8.94888 24.3963C8.98242 24.5774 9.07028 24.744 9.20079 24.8741C9.3313 25.0041 9.49827 25.0913 9.67953 25.1241L9.756 25.1383C11.2431 25.4059 12.7661 25.4059 14.2532 25.1383L14.3297 25.1241C14.5109 25.0913 14.6779 25.0041 14.8084 24.8741C14.9389 24.744 15.0268 24.5774 15.0603 24.3963L15.505 21.9919C16.5301 21.6068 17.476 21.0602 18.3256 20.3635L20.6252 21.182C20.7986 21.2433 20.9866 21.2504 21.1642 21.2024C21.3417 21.1543 21.5004 21.0533 21.6193 20.9129L21.6702 20.8535C22.6558 19.6895 23.4119 18.3783 23.9245 16.9538L23.95 16.8801C24.0718 16.529 23.967 16.1353 23.681 15.8889ZM12.0046 17.3673C9.25473 17.3673 7.02595 15.1385 7.02595 12.3886C7.02595 9.63872 9.25473 7.40993 12.0046 7.40993C14.7545 7.40993 16.9833 9.63872 16.9833 12.3886C16.9833 15.1385 14.7545 17.3673 12.0046 17.3673Z"
-                        fill="#C3C5C8" />
-                </svg>
-            </div>
-            <div data-tilt data-tilt-speed="200" class="cursor-pointer flex items-center bg-[#65A2B1] w-full h-[150px] rounded-2xl mt-5">
-                <img class="px-5 mt-5" src="../assets/images/vespa.png">
-                <div class="w-44 flex flex-col gap-2">
-                    <h1 class="text-white font-medium text-xl">Try PRO version</h1>
-                    <p class="text-white font-medium text-xs">Unlock full power of calender
-                        For 2 weeks for free!</p>
-                </div>
-            </div>
-            <div class="bg-nav-bg w-full h-[460px] mt-7 py-4 rounded-3xl px-9 flex flex-col items-center dark:bg-nav-dark">
-                <div class="flex items-center gap-3 py-2">
-                    <svg class="dark:hidden" width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g filter="url(#filter0_d_0_1)">
-                            <circle cx="19" cy="17" r="17" fill="white" />
-                        </g><path d="M22 12L17 17L22 22" stroke="black" stroke-opacity="0.5" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                        <defs>
-                            <filter id="filter0_d_0_1" x="0" y="0" width="38" height="38" filterUnits="userSpaceOnUse"
-                                color-interpolation-filters="sRGB">
-                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                <feColorMatrix in="SourceAlpha" type="matrix"
-                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                                <feOffset dy="2" />
-                                <feGaussianBlur stdDeviation="1" />
-                                <feComposite in2="hardAlpha" operator="out" />
-                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0" />
-                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1" />
-                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape" />
-                            </filter>
-                        </defs>
-                    </svg>
-                    <svg class="hidden dark:block" width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g filter="url(#filter0_d_0_1)">
-                        <circle cx="19" cy="17" r="17" fill="#292929"/>
-                        </g>
-                        <path d="M22 12L17 17L22 22" stroke="white" stroke-opacity="0.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        <defs>
-                        <filter id="filter0_d_0_1" x="0" y="0" width="38" height="38" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                        <feOffset dy="2"/>
-                        <feGaussianBlur stdDeviation="1"/>
-                        <feComposite in2="hardAlpha" operator="out"/>
-                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"/>
-                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
-                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
-                        </filter>
-                        </defs>
-                        </svg>       
-                    <div class="flex items-center gap-10 px-5">
-                        <span class="text-sm text-black/30 font-semibold dark:text-white/45 cursor-pointer">December</span>
-                        <span class="text-sm text-black font-semibold dark:text-white cursor-pointer">January</span>
-                        <span class="text-sm text-black/30 font-semibold dark:text-white/45 cursor-pointer">February</span>
-                    </div>
-                    <svg class="dark:hidden" width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g filter="url(#filter0_d_0_1)">
-                            <circle cx="19" cy="17" r="17" fill="white" />
-                        </g>
-                        <path d="M17 12L22 17L17 22" stroke="black" stroke-opacity="0.5" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                        <defs>
-                            <filter id="filter0_d_0_1" x="0" y="0" width="38" height="38" filterUnits="userSpaceOnUse"
-                                color-interpolation-filters="sRGB">
-                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                <feColorMatrix in="SourceAlpha" type="matrix"
-                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                                <feOffset dy="2" />
-                                <feGaussianBlur stdDeviation="1" />
-                                <feComposite in2="hardAlpha" operator="out" />
-                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0" />
-                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1" />
-                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape" />
-                            </filter>
-                        </defs>
-                    </svg>
-                    <svg class="hidden dark:block" width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g filter="url(#filter0_d_0_1)">
-                        <circle cx="19" cy="17" r="17" fill="#292929"/>
-                        </g>
-                        <path d="M17 12L22 17L17 22" stroke="white" stroke-opacity="0.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        <defs>
-                        <filter id="filter0_d_0_1" x="0" y="0" width="38" height="38" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                        <feOffset dy="2"/>
-                        <feGaussianBlur stdDeviation="1"/>
-                        <feComposite in2="hardAlpha" operator="out"/>
-                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"/>
-                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
-                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
-                        </filter>
-                        </defs>
-                        </svg>                        
-                </div>
-                <div class="grid grid-cols-7 gap-6 w-full h-full text-center py-3">
-                    <span class="days">S</span>
-                    <span class="days">M</span>
-                    <span class="days">T</span>
-                    <span class="days">W</span>
-                    <span class="days">W</span>
-                    <span class="days">S</span>
-                    <span class="days">S</span>
-                    <span class="daysnum">26</span>
-                    <span class="daysnum">27</span>
-                    <span class="daysnum">28</span>
-                    <span class="daysnum">29</span>
-                    <span class="daysnum">30</span>
-                    <span class="daysnum">31</span>
-                    <span class="days2">1</span>
-                    <span class="days2">2</span>
-                    <span class="days2">3</span>
-                    <span class="days2">4</span>
-                    <span class="days2">5</span>
-                    <span class="days2">6</span>
-                    <span class="days2">7</span>
-                    <span class="days2">8</span>
-                    <span class="days2">9</span>
-                    <span class="days2">10</span>
-                    <span class="days2">11</span>
-                    <span class="days2">12</span>
-                    <span class="days2">13</span>
-                    <span class="days2">14</span>
-                    <span class="days2">15</span>
-                    <span class="days2">16</span>
-                    <span class="days2">17</span>
-                    <span class="days2">18</span>
-                    <span class="days2">19</span>
-                    <span class="days2">20</span>
-                    <span class="days2">21</span>
-                    <span class="days2">22</span>
-                    <span class="days2">23</span>
-                    <span class="days2">24</span>
-                    <span class="days2">25</span>
-                    <span class="days2">26</span>
-                    <span class="days2">27</span>
-                    <span class="days2">28</span>
-                    <span class="days2">29</span>
-                    <span class="days2">30</span>
-                    <span class="days2">1</span>
-                    <span class="days2">2</span>
-                    <span class="days2">3</span>
-                    <span class="days2">4</span>
-                    <span class="days2">5</span>
-                    <span class="days2">6</span>
-                </div>
-            </div>
-            <div class="flex flex-col items-center justify-between mt-7 rounded-3xl bg-nav-bg w-full h-[210px] px-10 py-10 dark:bg-black">
-                <div class="w-full h-5 flex items-center justify-between">
-                    <div class="flex flex-col gap-3">
-                        <span class="text-black/55 font-semibold text-xl dark:text-white/45">Project Manager</span>
-                        <h1 class="text-black font-medium text-3xl dark:text-white">Client Meeting</h1>
-                    </div>
-                    <h1 class="flex items-center gap-3 dark:text-white font-semibold"><svg width="13" height="14" viewBox="0 0 13 14" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path class="dark:fill-white" d="M12.6094 5.84766V7.88672H0.914062V5.84766H12.6094ZM7.85156 0.867188V13.2891H5.68359V0.867188H7.85156Z"
-                                fill="black" fill-opacity="0.6" />
-                        </svg>
-                        NEW</h1>
-                </div>
-                <div class="bg-[#EDEFF3] w-full h-[64px] rounded-full p-2 flex items-center gap-12 dark:bg-[#141414]">
-                    <div class="bg-white w-[25%] h-full rounded-full flex items-center justify-center dark:bg-[#302F2F]"><svg width="18"
-                            height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M13.5619 10.3644C13.3677 10.1879 13.1126 10.0938 12.8504 10.1019C12.5881 10.11 12.3393 10.2197 12.1564 10.4078L9.73854 12.8944C9.15655 12.7833 7.9865 12.4185 6.7821 11.2172C5.5777 10.0118 5.21295 8.83869 5.10484 8.26074L7.58941 5.84183C7.77777 5.65908 7.88762 5.41021 7.89573 5.1479C7.90384 4.88558 7.80957 4.6304 7.63286 4.43636L3.89943 0.331101C3.72265 0.136454 3.47696 0.0183856 3.21453 0.00197209C2.9521 -0.0144414 2.69361 0.0720926 2.49396 0.243196L0.301385 2.12355C0.126698 2.29887 0.0224325 2.53221 0.00836811 2.7793C-0.00678792 3.0319 -0.295763 9.01551 4.344 13.6573C8.39167 17.704 13.4619 18 14.8582 18C15.0623 18 15.1876 17.9939 15.221 17.9919C15.468 17.9781 15.7012 17.8734 15.8757 17.6979L17.7551 15.5043C17.9263 15.3048 18.013 15.0464 17.9968 14.7839C17.9806 14.5215 17.8627 14.2758 17.6682 14.0988L13.5619 10.3644Z"
-                                fill="#0EC23E" />
-                        </svg>
-                    </div>
-                    <span class="text-black/55 font-bold dark:text-white/45">Swipe To Call</span>
-                </div>
-            </div>
-        </aside>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>

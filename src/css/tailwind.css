@@ -117,4 +117,16 @@
     .secound-ch{
         @apply self-end px-4 h-52 bg-red rounded-xl;
     }
+    .sent-items{
+        @apply flex items-center justify-between px-6 cursor-pointer;
+    }
+    .sent-items-name{
+        @apply flex flex-col items-start text-xl text-[#B1B1B1] dark:text-white;
+    }
+    .sent-time{
+        @apply text-[#718EBF] font-normal text-lg;
+    }
+    .trad-main-card-a{
+        @apply w-full h-80 flex flex-col justify-center bg-gradient-to-br from-[#2D60FF] to-[#539BFF] dark:bg-nav-dark rounded-3xl cursor-pointer;
+    }
 }

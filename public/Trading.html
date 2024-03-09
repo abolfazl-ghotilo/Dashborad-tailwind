@@ -11,7 +11,7 @@
 </head>
 <body class="dark:bg-black">
     <main class="flex dark:bg-black">
-        <nav data-aos="fade-right" class="flex flex-col items-center bg-nav-bg w-[18%] h-full dark:bg-nav-dark">
+        <nav data-aos="fade-right" class="z-10 fixed flex flex-col items-center bg-nav-bg h-full w-[18%] dark:bg-nav-dark">
             <div class="flex flex-col items-center py-5">
                 <img src="../assets/images/Profile.svg">
                 <h1 class="text-black dark:text-white text-xl font-bold mt-3">Abolfazl ghotilo</h1>
@@ -77,7 +77,7 @@
                         </defs>
                     </svg>
                     Shopping</span>
-                <span class="group menu-s"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                <a href="Account.html"><span class="group menu-s"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_1_14)">
                             <path class="menu-svg-hover"
@@ -159,7 +159,7 @@
                             </clipPath>
                         </defs>
                     </svg>
-                    Account</span>
+                    Account</span></a>
                 <span class="group menu-s"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_1_119)">
@@ -248,7 +248,7 @@
                     Aboout</span>
             </div>
         </nav>
-        <article data-aos="fade-down" class=" w-full h-full dark:bg-black">
+        <article data-aos="fade-down" class="ml-[285px] w-[82%] h-full dark:bg-black">
             <section class="flex items-center w-full justify-between h-20 bg-nav-bg px-10 py-2 shadow-sm dark:bg-nav-dark">
                 <h1 class="text-4xl font-medium text-black dark:text-white">Trading</h1>
                 <div class="flex items-center gap-7">
@@ -292,7 +292,7 @@
                     </svg>
                 </div>
             </section>
-            <section class="w-full h-screen px-10 py-10">
+            <section class="w-full h-full px-10 py-10 dark:bg-black">
                 <section class="grid grid-cols-4 gap-14 w-full">
                     <div data-tilt data-tilt-speed="200" class="items">
                         <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -344,11 +344,7 @@
                     </div>
                 </section>
                 <div class="flex items-center justify-between py-4">
-                    <h1 class="text-2xl font-medium text-black dark:text-white">Last Transaction</h1>
-                    <div class="flex items-center gap-[270px]">
                         <h1 class="text-xl font-bold text-black dark:text-white">My Card</h1>
-                        <span class="text-black/55 font-medium dark:text-white text-base">See All</span>
-                    </div>
                 </div>
                 <section class="grid grid-cols-6 gap-8 w-full h-80">
                     <div class="trad-main-sec">
@@ -441,12 +437,12 @@
                 </section>
                 <div class="flex items-center justify-between w-full py-4">
                     <h1 class="text-2xl font-medium text-black dark:text-white">Debit & Credit Overview</h1>
-                    <h1 class="pr-[250px] text-2xl font-bold text-black dark:text-white">Invoices Sent</h1>
+                    <h1 class="pr-[237px] text-2xl font-bold text-black dark:text-white">Invoices Sent</h1>
                 </div>
-                <section class="grid grid-cols-6 gap-8 w-full h-80">
-                <div class="w-full flex flex-col gap-8 col-span-4 justify-between bg-nav-bg rounded-3xl px-8 py-6">
+                <section class="grid grid-cols-6 gap-8 w-full h-auto dark:bg-black">
+                <div class="w-full flex flex-col gap-8 col-span-4 justify-between bg-nav-bg rounded-3xl px-8 py-6 dark:bg-nav-dark">
                     <div class="flex items-center justify-between px-4">
-                        <h1 class="text-[#718EBF] text-lg"><span class="text-black">$7,560</span> Debited & <span class="text-black">$5,420</span> Credited in this Week</h1>
+                        <h1 class="text-[#718EBF] text-lg"><span class="text-black dark:text-white">$7,560</span> Debited & <span class="text-black dark:text-white">$5,420</span> Credited in this Week</h1>
                         <div class="flex items-center gap-8">
                             <h1 class="flex items-center gap-2 text-[#718EBF]"><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g filter="url(#filter0_i_14_2)">
@@ -538,11 +534,68 @@
                         </div>
                     </div>
                 </div>
-
-
-
-                    <div class=" w-full col-span-2 rounded-3xl bg-nav-bg">
-
+                    <div class="grid grid-cols-1 gap-4 w-full col-span-2 rounded-3xl px-2 py-4 bg-nav-bg dark:bg-nav-dark">
+                        <div class="sent-items">
+                            <div class="flex items-center gap-3">
+                                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="60" height="60" rx="20" fill="#DCFAF8"/>
+                                    <g clip-path="url(#clip0_101_281)">
+                                    <path d="M40.0476 35.2021C39.2662 34.733 37.641 33.7564 37.641 31.216C37.641 29.0719 39.0759 27.9898 39.8466 27.4086L39.8627 27.3964C40.1721 27.1631 40.2458 26.7287 40.0311 26.4061C38.3091 23.8207 35.3519 23.7461 34.777 23.7568H34.7735C34.3792 23.7573 34.0029 23.8027 33.6461 23.8744C33.7779 23.769 33.9058 23.6567 34.0287 23.5377C35.2606 22.3458 35.9376 20.5873 35.8854 18.7116C35.8741 18.3158 35.5501 18 35.1538 18C33.8213 18 32.3063 18.796 31.1999 20.0777C30.0851 21.3692 29.5644 22.9163 29.7718 24.322C29.7889 24.4386 29.8338 24.545 29.8982 24.6363C29.703 24.5709 29.4965 24.4948 29.2925 24.4196C28.5174 24.1341 27.6384 23.8105 26.8155 23.8105C26.7989 23.8105 25.1258 23.8227 23.4552 24.8603C21.9939 25.7686 20.2515 27.6589 20.2515 31.5093C20.2515 33.5119 21.0338 36.3154 22.2447 38.6523C23.0813 40.2668 24.8174 42.9766 27.0469 42.9893H27.0708C28.6966 42.9893 30.0436 42.0292 30.9598 42.0292C32.5245 42.0292 33.0814 43 34.7735 43C36.2905 43 37.7605 41.8477 39.1432 39.5757C39.6508 38.7411 40.0457 37.9158 40.2873 37.3701C40.7485 36.3305 40.7485 36.1919 40.7485 36.0904C40.7485 35.6233 40.3922 35.409 40.0476 35.2021ZM32.3083 21.0343C32.9091 20.3384 33.6661 19.822 34.3831 19.594C34.2459 20.7308 33.7657 21.7552 33.0106 22.4854C32.4816 22.9974 31.8466 23.3302 31.2018 23.4449C31.2702 22.6406 31.6548 21.7913 32.3083 21.0343ZM37.8216 38.9295C36.7766 40.6104 35.694 41.5358 34.7735 41.5358C33.507 41.5358 32.915 40.565 30.9598 40.565C29.6405 40.565 28.3818 41.5319 27.0552 41.525C26.0205 41.5192 24.6753 40.1604 23.545 37.9787C22.4336 35.8346 21.7157 33.2952 21.7157 31.5093C21.7157 28.9811 22.5469 27.1718 24.1848 26.1313C25.4602 25.3216 26.7648 25.2762 26.8199 25.2747C27.963 25.2776 29.5497 26.2894 30.706 26.2894C31.747 26.2894 33.1409 25.221 34.7789 25.221H34.8058C35.203 25.2132 37.0787 25.2576 38.3965 26.6877C37.4653 27.472 36.1768 28.8825 36.1768 31.216C36.1768 34.3855 38.1813 35.777 39.1281 36.3573C38.8924 36.9284 38.4429 37.9304 37.8216 38.9295Z" fill="#16DBCC"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_101_281">
+                                    <rect width="25" height="25" fill="white" transform="translate(18 18)"/>
+                                    </clipPath>
+                                    </defs>
+                                    </svg>
+                                <h1 class="sent-items-name">Apple Store<span class="sent-time">5h ago</span></h1>
+                            </div> 
+                            <span class="sent-time">$450</span>                          
+                        </div>
+                        <div class="sent-items">
+                            <div class="flex items-center gap-3">
+                                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="60" height="60" rx="20" fill="#FFF5D9"/>
+                                    <g clip-path="url(#clip0_0_1)">
+                                    <path d="M39.3389 34.1611C37.9774 32.7997 36.3569 31.7918 34.5888 31.1817C36.4825 29.8775 37.7266 27.6947 37.7266 25.2266C37.7266 21.2418 34.4847 18 30.5 18C26.5153 18 23.2734 21.2418 23.2734 25.2266C23.2734 27.6947 24.5175 29.8775 26.4112 31.1817C24.6432 31.7918 23.0227 32.7997 21.6612 34.1611C19.3002 36.5221 18 39.6611 18 43H19.9531C19.9531 37.1844 24.6844 32.4531 30.5 32.4531C36.3156 32.4531 41.0469 37.1844 41.0469 43H43C43 39.6611 41.6998 36.5221 39.3389 34.1611ZM30.5 30.5C27.5922 30.5 25.2266 28.1344 25.2266 25.2266C25.2266 22.3187 27.5922 19.9531 30.5 19.9531C33.4078 19.9531 35.7734 22.3187 35.7734 25.2266C35.7734 28.1344 33.4078 30.5 30.5 30.5Z" fill="#FFBB38"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_0_1">
+                                    <rect width="25" height="25" fill="white" transform="translate(18 18)"/>
+                                    </clipPath>
+                                    </defs>
+                                    </svg>                                                                     
+                                <h1 class="sent-items-name">Michael<span class="sent-time">2 days ago</span></h1>
+                            </div> 
+                            <span class="sent-time">$160</span>                          
+                        </div>
+                        <div class="sent-items">
+                            <div class="flex items-center gap-3">
+                                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="60" height="60" rx="20" fill="#E7EDFF"/>
+                                    <g clip-path="url(#clip0_0_1)">
+                                    <path d="M38.2994 31.265C37.8337 31.265 37.3736 31.3332 36.9314 31.4675L31.2315 33.0454V24.9836C31.2315 24.5798 31.5601 24.2512 31.9639 24.2512C32.3678 24.2512 32.6963 24.5798 32.6963 24.9836V30.6813H33.4288C36.2558 30.6813 38.5557 28.3813 38.5557 25.5543C38.5557 23.2667 37.0191 21.237 34.8161 20.6175L25.3559 18V30.556L21.5599 31.6067C21.1117 31.7189 20.682 31.8971 20.2826 32.1366C18.0601 33.4691 17.3361 36.3615 18.6687 38.584C19.1965 39.4642 19.9767 40.1334 20.925 40.5193C21.4904 40.7494 22.0993 40.8661 22.7074 40.866C23.085 40.866 23.4623 40.821 23.8286 40.7303L25.3559 40.3077V41.5762L30.4991 43L39.6583 40.4646L39.6775 40.459C40.6192 40.1705 41.465 39.576 42.0592 38.7849C42.6741 37.9663 42.9991 36.9911 42.9991 35.9648C42.9991 33.3733 40.8908 31.265 38.2994 31.265ZM25.3558 34.6719L21.504 35.7381L21.8949 37.1499L25.3558 36.1918V38.7878L23.4669 39.3107C23.2075 39.3742 22.9467 39.405 22.6894 39.405C21.5732 39.4049 20.5218 38.8262 19.925 37.8307C19.0078 36.3009 19.5061 34.3101 21.0359 33.3928C21.3134 33.2264 21.6117 33.103 21.9223 33.026L25.3558 32.0758V34.6719ZM29.7666 24.9836V41.2773L26.8207 40.4618V19.9252L34.4226 22.0286C35.9936 22.4703 37.0909 23.9202 37.0909 25.5544C37.0909 27.3229 35.8306 28.8026 34.1612 29.1429V24.9836C34.1612 23.7721 33.1755 22.7864 31.9639 22.7864C30.7523 22.7864 29.7666 23.7721 29.7666 24.9836ZM39.2573 39.0556L31.2315 41.2773V38.6813L39.4946 36.3938L39.1038 34.9821L31.2315 37.1613V34.5653L37.3314 32.8767L37.3505 32.8711C37.6565 32.7774 37.9758 32.7299 38.2994 32.7299C40.0831 32.7299 41.5343 34.1811 41.5343 35.9647C41.5342 37.3931 40.6195 38.6341 39.2573 39.0556Z" fill="#396AFF"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_0_1">
+                                    <rect width="25" height="25" fill="white" transform="translate(18 18)"/>
+                                    </clipPath>
+                                    </defs>
+                                    </svg>                                    
+                                <h1 class="sent-items-name">Playstation<span class="sent-time">5 days ago</span></h1>
+                            </div> 
+                            <span class="sent-time">$1085</span>                          
+                        </div>
+                        <div class="sent-items">
+                            <div class="flex items-center gap-3">
+                                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="60" height="60" rx="20" fill="#FFE0EB"/>
+                                    <path d="M39.3389 34.1611C37.9774 32.7997 36.3569 31.7918 34.5888 31.1817C36.4825 29.8775 37.7266 27.6947 37.7266 25.2266C37.7266 21.2418 34.4847 18 30.5 18C26.5153 18 23.2734 21.2418 23.2734 25.2266C23.2734 27.6947 24.5175 29.8775 26.4112 31.1817C24.6432 31.7918 23.0227 32.7997 21.6612 34.1611C19.3002 36.5221 18 39.6611 18 43H19.9531C19.9531 37.1844 24.6844 32.4531 30.5 32.4531C36.3156 32.4531 41.0469 37.1844 41.0469 43H43C43 39.6611 41.6998 36.5221 39.3389 34.1611ZM30.5 30.5C27.5922 30.5 25.2266 28.1344 25.2266 25.2266C25.2266 22.3187 27.5922 19.9531 30.5 19.9531C33.4078 19.9531 35.7734 22.3187 35.7734 25.2266C35.7734 28.1344 33.4078 30.5 30.5 30.5Z" fill="#FF82AC"/>
+                                    </svg>                                    
+                                <h1 class="sent-items-name">William<span class="sent-time">10 days ago</span></h1>
+                            </div> 
+                            <span class="sent-time">$90</span>                          
+                        </div>
                     </div>
                 </section>
             </section>
