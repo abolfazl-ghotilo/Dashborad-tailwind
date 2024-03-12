@@ -138,4 +138,10 @@
     .trad-txtm{
         @apply flex flex-col text-nowrap items-start w-full text-[#232323] text-xl font-medium dark:text-white;
     }
+    .items-Buy{
+        @apply flex items-center gap-6 cursor-pointer bg-nav-bg w-full py-5 px-8 rounded-2xl dark:bg-nav-dark;
+    }
+    .Buy-main-sec{
+        @apply flex flex-col w-full h-screen py-1 rounded-3xl;
+    }
 }
